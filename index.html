@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BEIS</title>
+    <link rel="stylesheet" href="static/access/css/style.css" type="text/css">
+    <!-- Desktop -->
+    <link rel="stylesheet" href="static/access/css/desctop.css" type="text/css">
+    <!-- Tablet -->
+    <link rel="stylesheet" href="static/access/css/tablet.css" type="text/css">
+    <!-- Mobile -->
+    <link rel="stylesheet" href="static/access/css/mobile.css" type="text/css">
+    <!-- Grid System -->
+    <link rel="stylesheet" href="static/access/css/columns.css" type="text/css">
+</head>
+
+<body>
+    <div class="gadjet">
+        <h3>Поверните устройство <i class="fas fa-tablet-alt"></i></h3>
+        <p>Данные размеры экрана временно не поддерживаются</p>
+    </div>
+    <header class="header">
+        <!-- <div class="header__container"> -->
+        <div class="header__container logotype">
+            <img src="static/access/img/logotype.png" alt="BEIS" class="img_fluid">
+        </div>
+
+        <div class="header__container slog">
+            <span>
+                Создай бота без<br>единой строчки
+                кода
+            </span>
+        </div>
+
+        <div class="header__container menu">
+            <ul class="menu">
+                <li class="item">
+                    <a href="construct.html">Создать бота</a></li>
+                <li class="item"><a href="knowledge_base.html">База знаний</a></li>
+                <li class="item"><a href="faq.html">FAQ</a></li>
+
+                <li class="item"><a href="market.html">Магазин шаблонов</a></li>
+            </ul>
+        </div>
+
+        <div class="header__container theme">
+            <!-- Ночная подсветка -->
+            <i class="fas fa-moon"></i>
+            <!-- Дневная подсветка -->
+            <!-- <i class="fas fa-sun"></i> -->
+        </div>
+
+        <div class="header__container user_menu">
+            <!-- Если гость -->
+            <a id="desctop_menu" href="login.html">
+                <button><i class="fas fa-sign-in-alt"></i> Войти</button>
+            </a>
+            <!-- Пользователь аторизовался -->
+            <button id="mobile_menu"><i class="fas fa-bars"></i></button>
+        </div>
+        <!-- </div> -->
+    </header>
+    <main>
+        <div class="whom-header">
+            <div class="lg-6 mob-12">
+                <div class="mt5"></div>
+                <h1>BEIS - это многофункциональная и удобная CMS для создания чат ботов.</h1>
+                <br>
+                <p>
+                    Создавайте чат-ботов без единой строчки кода, вам не нужно быть профессиональным программистом, что бы создать чат-бота. Наш конструктор максимально адаптирован под вас. Кроме того у нас есть "База знаний" где мы делимся с вами как создать максимально
+                    эффективного чат-бота на различные направления.
+                </p>
+            </div>
+            <div class="lg-4 mob-12 top-10"><img src="static/access/img/1.png" alt="Animations fone" class="img_fluid"></div>
+        </div>
+        <div class="mt2"></div>
+        <div class="content">
+            <h1 class="center">Что вы получите?</h1>
+            <br>
+            <div class="content__container text-center mt4 mmt0">
+                <a id="item" class="active-item">Панель управления</a>
+                <a id="item">Статистика</a>
+                <a id="item">Загрузка контента</a>
+                <a id="item">Продажа шаблонов</a>
+            </div>
+            <div class="mt4"></div>
+
+            <div class="content__card" style="display: block;">
+                <div class="content__card-body">
+                    <div class="lg-3 mob-6 d-none">
+                        <img src="static/access/img/PU.webp" alt="Business info" class="img_fluid pr1">
+                    </div>
+                    <div class="lg-5 mt1">
+                        <p>Реферальные ссылки, воронки продаж, отслеживание кликов, партнёрские программы, мониторинг активности и т.д помогут вам в развитии вашего бизнеса в социальных сетях.</p>
+                        <p class="mt1">Удобные графики и экспортирование таблиц, мы предоставляем вам различные механизмы для анализа данных.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="content__card" style="display: none;">
+                <div class="content__card-body">
+                    <div class="lg-6 mob-12">
+                        <h2>Внедряйте статистику инструментами которые мы предоставляем.</h2>
+                        <p class="mt1">Мы предоставляем вам эффективные инструменты по сбору данных, с помощью которых вы сможете определить дальнейшее эффективность в том или ином подходе взаимодействия чат-бота с вашими клиентами.</p>
+                        <button id="video_statistic" class="btn">Подробнее</button>
+                    </div>
+                    <div class="lg-4 d-none">
+                        <img src="static/access/img/business-animation.gif" alt="Business info" class="img_fluid">
+                    </div>
+                </div>
+            </div>
+
+            <div class="content__card" style="display: none;">
+                <div class="content__card-body">
+                    <div class="lg-4 d-none pr1">
+                        <img src="static/access/img/upload.png" alt="Business info" class="img_fluid">
+                    </div>
+                    <div class="lg-6 mob-12 mt3">
+                        <p>В панели управления вы найдёте различные инструменты загрузки контента для ботов:</p>
+                        <p class="mt1">
+                            <p><i class="far fa-check-circle"></i> Пополняйте ассортимент товаров или услуг</p>
+                            <p><i class="far fa-check-circle"></i> Несколько способов создать рекламу из поста</p>
+                            <p><i class="far fa-check-circle"></i> Загружайте информационный контент и не только</p>
+                            <p><i class="far fa-check-circle"></i> Даём полный контроль над контентом ботов</p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content__card" style="display: none;">
+                <div class="content__card-body">
+                    <div class="lg-6 mob-12 mt3 pr1">
+                        <h2>Продавайте своих чат-ботов и зарабатывайте на шаблонах</h2>
+                        <p>В "Магазине шаблонов" вы можете разместить вашего бота на продажу. За каждого проданого бота вам начисляются баллы, в колличестве 10% от продажи. Баллы вы можете вложить в покупку или создание нового чат-бота.</p>
+                        <p class="mt1">За покупку вам тоже начисляются баллы в размере 5% от стоимости покупки.</p>
+                    </div>
+                    <div class="lg-4 d-none">
+                        <img src="static/access/img/animate_fone.gif" alt="Business info" class="img_fluid br1">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content">
+            <h1 class="center">Статистика <strong>BEIS</strong> за 2 недели:</h1>
+            <br>
+            <div class="content__container d-flex">
+                <div class="lg-5">
+                    <svg class="chart" width="500" height="500" viewBox="0 0 50 50">
+                        <circle class="unit" r="15.9" cx="50%" cy="50%"></circle>
+                        <circle class="unit" r="15.9" cx="50%" cy="50%"></circle>
+                        <circle class="unit" r="15.9" cx="50%" cy="50%"></circle>
+                        <circle class="unit" r="15.9" cx="50%" cy="50%"></circle>
+                      </svg>
+                </div>
+                <div class="lg-4 right mt5 mt0">
+                    <div class="lg-12 mt3">
+                        <h3><i class="fas fa-circle icon-color" style="color: #272c52;"></i> <b>36</b> Ботов созданно</h3>
+                    </div>
+                    <div class="lg-12 mt3">
+                        <h3><i class="fas fa-circle icon-color" style="color: #9eaee7;"></i> <b>41</b> Проданно шаблонов</h3>
+                    </div>
+                    <div class="lg-12 mt3">
+                        <h3><i class="fas fa-circle icon-color" style="color: #a796f1;"></i> <b>13</b> Материала в <a href="knowledge_base.html">базе знаний</a></h3>
+                    </div>
+                    <div class="lg-12 mt3">
+                        <h3><i class="fas fa-circle icon-color" style="color: #fc6fb1;"></i> <b>17</b> Новых пользователей за 2 недели</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="whom">
+            <h1 class="center">Создай своего бота за пару минут</h1>
+            <div class="lg-12 mt5 d-flex">
+                <div class="lg-5">
+                    <img src="static/access/img/monitor.png" alt="Video" class="img_fluid">
+                    <span class="wrap-image"><i class="far fa-play-circle"></i></span>
+                </div>
+                <div class="lg-5 mob-12 right mtm6">
+                    <h3>
+                        BEIS - предоставляет вам удобный конструктор чат-ботов.<br> Никаких сложных запутанных механизмов сборки, и дополнительных настроек.<br> Вы выбираете только нужный вам функционал.<br>
+                    </h3>
+                    <div class="mt1"></div>
+                    <h3>
+                        Бота можно создать за пару минут, в видео продемонстрирован процесс сборки. По всем вопросам вы можете обращаться в службу поддержки или можете найти ответ на интересующую вас тему в нашей <a href="knowledge_base.html">базе знаний.</a>
+                    </h3>
+                </div>
+            </div>
+
+            <div class="content mt5">
+                <h1 class="center">Мессенджеры с которыми мы работаем</h1>
+                <br>
+                <div class="content__container d-flex mt4 messenger_lists">
+                    <div class="lg-2 mob-6 rec412">
+                        <i class="fab fa-telegram-plane"></i>
+                        <p class="text-center"><strong>Telegram</strong></p>
+                    </div>
+                    <div class="lg-2 mob-6 rec412">
+                        <i class="fab fa-instagram"></i>
+                        <p class="text-center"><strong>Instagram</strong></p>
+                    </div>
+                    <div class="lg-2 mob-6 rec412">
+                        <i class="fab fa-vk"></i>
+                        <p class="text-center"><strong>Вконтакте</strong></p>
+                    </div>
+                    <div class="lg-2 mob-6 rec412">
+                        <i class="fab fa-viber"></i>
+                        <p class="text-center"><strong>Viber</strong></p>
+                    </div>
+                    <div class="lg-2 mob-6 rec412">
+                        <i class="fab fa-facebook-messenger"></i>
+                        <p class="text-center"><strong>Facebook</strong></p>
+                    </div>
+                    <div class="lg-2 mob-6 rec412">
+                        <i class="fab fa-whatsapp"></i>
+                        <p class="text-center"><strong>Whatsapp</strong></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content mt1 pb-none">
+            <div class="content__container d-flex">
+                <div class="zero-two">
+                    <h1>Готовы начать?</h1>
+                    <button class="btn">Создать чат бота</button>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <div class="d-flex">
+            <div class="lg-3 mob-12 mt3 pl-5">
+                <h2><a href="index.html">BEIS</a></h2>
+                <p>© 2021—2021, Robochat Solutions Inc.</p>
+                <p>ИП Брукс В.М. ИНН 000000000000 ОГРНИП 000000000000000 <br> г. Новосибирск, Ленина 21</p>
+            </div>
+            <div class="lg-3 mob-12 mt3 pl-5">
+                <h3>API:</h3>
+                <br>
+                <p><a href="dev.html">API</a></p>
+            </div>
+            <div class="lg-3 mob-12 mt3 pl-5">
+                <h3>Меню:</h3>
+                <br>
+                <p><a href="index.html">Главная</a></p>
+                <p><a href="construct.html">Конструктор</a></p>
+                <p><a href="knowledge_base.html">База знаний</a></p>
+                <p><a href="market/market.html">Магазин шаблонов</a></p>
+                <p><a href="faq.html">FAQ</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/8b9970d558.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

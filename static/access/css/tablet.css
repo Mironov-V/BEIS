@@ -1,0 +1,132 @@
+@media (min-width: 992px) and (max-width: 1199px) {
+    header,
+    main,
+    footer {
+        display: none;
+    }
+    .gadjet {
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: relative;
+        top: 10em;
+        text-align: center;
+    }
+    .gadjet i {
+        color: rgb(218, 79, 79);
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1071px) {
+    header,
+    main,
+    footer {
+        display: none;
+    }
+    .gadjet {
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: relative;
+        top: 10em;
+        text-align: center;
+    }
+    .gadjet i {
+        color: rgb(218, 79, 79);
+    }
+}
+
+@media (min-width: 881px) and (max-width: 971px) {
+    header,
+    main,
+    footer {
+        display: none;
+    }
+    .gadjet {
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: relative;
+        top: 10em;
+        text-align: center;
+    }
+    .gadjet i {
+        color: rgb(218, 79, 79);
+    }
+}
+
+@media (min-width: 703px) and (max-width: 918px) {
+    header,
+    main,
+    footer {
+        display: none;
+    }
+    .gadjet {
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: relative;
+        top: 10em;
+        text-align: center;
+    }
+    .gadjet i {
+        color: rgb(218, 79, 79);
+    }
+}
+
+@media (min-width: 598px) and (max-width: 672px) {
+    header,
+    main,
+    footer {
+        display: none;
+    }
+    .gadjet {
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: relative;
+        top: 10em;
+        text-align: center;
+    }
+    .gadjet i {
+        color: rgb(218, 79, 79);
+    }
+}
+
+@media (min-width: 527px) and (max-width: 588px) {
+    header,
+    main,
+    footer {
+        display: none;
+    }
+    .gadjet {
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: relative;
+        top: 10em;
+        text-align: center;
+    }
+    .gadjet i {
+        color: rgb(218, 79, 79);
+    }
+}
+
+@media (min-width: 470px) and (max-width: 523px) {
+    header,
+    main,
+    footer {
+        display: none;
+    }
+    .gadjet {
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: relative;
+        top: 10em;
+        text-align: center;
+    }
+    .gadjet i {
+        color: rgb(218, 79, 79);
+    }
+}

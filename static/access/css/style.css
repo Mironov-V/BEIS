@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jaldi&display=swap');
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    /* position: relative; */
+    top: 0;
+}
+
+main div {
+    width: 100%;
+}
+
+header,
+main,
+footer {
+    position: relative;
+    font-family: 'Manrope', sans-serif;
+}
+
+footer {
+    width: 100%;
+    background-color: #deecfd;
+    padding: 3% 2% 0% 2%;
+    max-width: 100%;
+    height: 100%;
+    padding-bottom: 1.1em;
+}
+
+footer p {
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+p {
+    font-size: 1.2em;
+    color: #1c3457;
+    font-family: 'Jaldi', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #1c3457;
+    font-family: 'Manrope', sans-serif;
+    font-weight: bold;
+}
+
+span,
+a {
+    text-decoration: none;
+    color: #1c3457;
+    font-family: 'Jaldi', sans-serif;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+    z-index: 99999;
+}
+
+main {
+    margin-bottom: 5em;
+    top: 5em;
+}
+
+main a,
+main span,
+main strong,
+main b,
+main p {
+    font-size: 1.2em;
+}
+
+.br1 {
+    border-radius: 1em;
+}
+
+
+/* Отступы */
+
+.pb-none {
+    padding-bottom: 0em!important;
+}
+
+.pl-5 {
+    padding-left: 5em;
+}
+
+.pr1 {
+    padding-right: 1em;
+}
+
+.mt1 {
+    margin-top: 1em;
+}
+
+.mt2 {
+    margin-top: 2em;
+}
+
+.mt3 {
+    margin-top: 3em;
+}
+
+.mt4 {
+    margin-top: 4em;
+}
+
+.mt5 {
+    margin-top: 5em;
+}

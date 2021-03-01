@@ -1,0 +1,144 @@
+@media screen and (max-width: 480px) {
+    .gadjet {
+        display: none;
+    }
+    .header {
+        padding: 0% 5% 0% 5%;
+    }
+    .logotype {
+        width: 17%;
+        position: absolute;
+        top: 11%;
+    }
+    p {
+        font-size: 0.8em;
+    }
+    .slog,
+    .menu,
+    .theme {
+        display: none;
+    }
+    .header__container {
+        position: relative;
+    }
+    .user_menu {
+        float: right;
+        top: 17%;
+        width: 15%;
+    }
+    #desctop_menu {
+        display: none;
+    }
+    #mobile_menu {
+        display: block;
+    }
+    .user_menu button i {
+        font-size: 1.5em;
+    }
+    h1 {
+        font-size: 1.4em;
+    }
+    h3 {
+        font-size: 1em;
+    }
+    div b {
+        font-size: 1em;
+    }
+    /* MAIN */
+    .whom-header {
+        border-radius: 0rem 0rem 1rem 1rem;
+        display: block;
+        padding: 0em 1em 4em 1em;
+    }
+    .whom {
+        padding: 4em 1em 4em 1em;
+        display: block;
+        border-radius: 2rem;
+    }
+    .messenger_lists {
+        display: -webkit-inline-box!important;
+    }
+    .whom h1 {
+        margin-bottom: 2em;
+    }
+    .mtm6 {
+        margin-top: 6em;
+    }
+    .mmt0 {
+        margin-top: 0em;
+    }
+    .wrap-image {
+        width: 86%;
+        height: 2.7em;
+        cursor: pointer;
+        font-size: 5em;
+        display: block;
+        position: relative;
+        top: 0;
+        bottom: 0;
+        left: 0em;
+        right: 0;
+        padding-top: 1em;
+        padding-left: 0.5em;
+        margin-top: -16rem;
+    }
+    .wrap-image i {
+        text-align: center;
+        display: block;
+        margin-top: 0.3em;
+    }
+    .chart {
+        min-width: 100%;
+    }
+    .rec412 {
+        display: inline-block;
+        margin: 4% 0%;
+    }
+    .content {
+        padding: 2em 1em 2em 1em;
+        display: block;
+    }
+    .center {
+        text-align: center;
+    }
+    #item {
+        display: none;
+    }
+    .d-flex {
+        display: block;
+    }
+    .chart {
+        width: 100%;
+        height: 100%;
+    }
+    .mt0 {
+        margin-top: 0em;
+    }
+    /* !!!!!!!!!!!!! */
+    header {
+        display: block;
+    }
+    .zero-two {
+        width: 100%;
+    }
+    main {
+        top: 4em;
+        display: block;
+    }
+    footer {
+        display: block;
+    }
+    .d-none {
+        display: none;
+    }
+    footer .mt3 {
+        margin-top: 1.3em;
+    }
+    footer .d-flex {
+        display: block;
+    }
+    /*  */
+    .con-10 {
+        margin-top: 10%;
+    }
+}
