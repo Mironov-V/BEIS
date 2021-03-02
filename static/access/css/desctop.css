@@ -289,6 +289,10 @@ a.active-item {
     margin-bottom: 1.2em;
 }
 
+.desk-none {
+    display: none;
+}
+
 
 /* Blua */
 

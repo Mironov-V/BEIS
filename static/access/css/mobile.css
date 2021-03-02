@@ -68,6 +68,9 @@
     .mmt0 {
         margin-top: 0em;
     }
+    .m-disp {
+        display: block;
+    }
     .wrap-image {
         width: 86%;
         height: 2.7em;
