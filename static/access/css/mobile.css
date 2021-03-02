@@ -56,6 +56,7 @@
         border-radius: 2rem;
     }
     .messenger_lists {
+        margin-top: -1em;
         display: -webkit-inline-box!important;
     }
     .whom h1 {
@@ -83,9 +84,30 @@
         margin-top: -16rem;
     }
     .wrap-image i {
+        margin-top: 0.3em;
         text-align: center;
         display: block;
-        margin-top: 0.3em;
+        margin-left: 0.1em;
+    }
+    .user_menu button {
+        width: 90%;
+        border-radius: 0.1em;
+    }
+    .content__card {
+        margin-top: -2em;
+    }
+    .caroosel-mobile {
+        width: 50%;
+        margin: 0 auto;
+        font-size: 1.3em;
+    }
+    .caroosel-mobile a#prev {
+        position: relative;
+        right: -1.1em;
+    }
+    .caroosel-mobile a#next {
+        position: relative;
+        left: -1.1em;
     }
     .chart {
         min-width: 100%;
@@ -114,6 +136,9 @@
     .mt0 {
         margin-top: 0em;
     }
+    .top-10 {
+        margin-top: 10%;
+    }
     /* !!!!!!!!!!!!! */
     header {
         display: block;
@@ -140,5 +165,8 @@
     /*  */
     .con-10 {
         margin-top: 10%;
+    }
+    .pb-none {
+        margin-bottom: -1em;
     }
 }
