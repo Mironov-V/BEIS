@@ -80,7 +80,7 @@
         position: relative;
         top: 0;
         bottom: 0;
-        left: 0.49em;
+        left: 0.6em;
         right: 0;
         padding-left: 0.1em;
         margin-top: -14rem;
@@ -89,6 +89,7 @@
         text-align: center;
         display: block;
         margin-left: 0.1em;
+        margin-top: -0.5em;
     }
     .user_menu button {
         width: 90%;
