@@ -73,7 +73,7 @@
     }
     .wrap-image {
         width: 76%;
-        height: 2.2em;
+        height: 100%;
         cursor: pointer;
         font-size: 5em;
         display: block;
@@ -83,13 +83,13 @@
         left: 0.55em;
         right: 0;
         padding-left: 0.1em;
-        margin-top: -13.1rem;
+        margin-top: -4.9rem;
     }
     .wrap-image i {
+        font-size: 1.3em;
         text-align: center;
         display: block;
         margin-left: -0.15em;
-        margin-top: -0.45em;
     }
     .user_menu button {
         width: 90%;
