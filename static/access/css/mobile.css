@@ -88,8 +88,8 @@
     .wrap-image i {
         text-align: center;
         display: block;
-        margin-left: 0.1em;
-        margin-top: -0.5em;
+        margin-left: -0.15em;
+        margin-top: -0.2em;
     }
     .user_menu button {
         width: 90%;
