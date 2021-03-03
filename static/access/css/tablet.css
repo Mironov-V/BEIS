@@ -17,60 +17,84 @@
     }
 }
 
-@media (min-width: 992px) and (max-width: 1071px) {
-    header,
-    main,
-    footer {
-        display: none;
-    }
-    .gadjet {
-        display: block;
-        width: 100%;
-        height: 100%;
-        position: relative;
-        top: 10em;
-        text-align: center;
-    }
-    .gadjet i {
-        color: rgb(218, 79, 79);
-    }
-}
-
 @media (min-width: 881px) and (max-width: 971px) {
-    header,
-    main,
-    footer {
+    .gadjet {
         display: none;
     }
-    .gadjet {
-        display: block;
-        width: 100%;
-        height: 100%;
-        position: relative;
-        top: 10em;
-        text-align: center;
+    .slog {
+        display: none;
     }
-    .gadjet i {
-        color: rgb(218, 79, 79);
+    .theme {
+        margin-left: 11em;
+        margin-right: 2em;
+    }
+    #desctop_menu button {
+        margin-top: 1em;
+        width: 125%;
+        padding: 0% 0% 0% 0%;
+    }
+    .top-10 {
+        margin-top: 10%;
+    }
+    .d-none {
+        display: none;
+    }
+    .content {
+        margin-top: 0%;
     }
 }
 
 @media (min-width: 703px) and (max-width: 918px) {
-    header,
-    main,
-    footer {
+    .gadjet {
         display: none;
     }
-    .gadjet {
-        display: block;
-        width: 100%;
-        height: 100%;
-        position: relative;
-        top: 10em;
-        text-align: center;
+    main a,
+    main span,
+    main strong,
+    main b,
+    main p {
+        font-size: 1em;
     }
-    .gadjet i {
-        color: rgb(218, 79, 79);
+    .logotype {
+        width: 8%!important;
+    }
+    .slog {
+        display: none;
+    }
+    .theme {
+        margin-left: 10em;
+        margin-right: 0.5em;
+    }
+    .menu {
+        width: 65%;
+        margin-left: -3em;
+    }
+    .user_menu {
+        width: 10%;
+        height: 2.7em;
+    }
+    .whom-header {
+        padding: 0em 2em 3em 2em;
+    }
+    #item {
+        padding: 0.4em;
+    }
+    #desctop_menu button {
+        margin-top: 1em;
+        width: 125%;
+        padding: 0% 0% 0% 0%;
+    }
+    .whom {
+        padding: 5em 3em 3em 3em;
+    }
+    .top-10 {
+        margin-top: 10%;
+    }
+    .d-none {
+        display: none;
+    }
+    .content {
+        margin-top: 0%;
     }
 }
 
@@ -94,39 +118,311 @@
 }
 
 @media (min-width: 527px) and (max-width: 588px) {
-    header,
-    main,
-    footer {
+    .gadjet {
         display: none;
     }
-    .gadjet {
-        display: block;
-        width: 100%;
-        height: 100%;
+    .header {
+        padding: 0% 5% 0% 5%;
+    }
+    .logotype {
+        width: 15%;
+        position: absolute;
+        top: 11%;
+    }
+    p {
+        font-size: 0.8em;
+    }
+    .slog,
+    .menu,
+    .theme {
+        display: none;
+    }
+    .header__container {
         position: relative;
-        top: 10em;
+    }
+    .user_menu {
+        float: right;
+        top: 17%;
+        width: 15%;
+    }
+    #desctop_menu {
+        display: none;
+    }
+    #mobile_menu {
+        display: block;
+    }
+    .user_menu button i {
+        font-size: 1.8em;
+    }
+    h1 {
+        font-size: 1.4em;
+    }
+    h3 {
+        font-size: 1em;
+    }
+    div b {
+        font-size: 1em;
+    }
+    /* MAIN */
+    .whom-header {
+        border-radius: 0rem 0rem 1rem 1rem;
+        display: block;
+        padding: 0em 1em 4em 1em;
+    }
+    .whom {
+        padding: 4em 1em 4em 1em;
+        display: block;
+        border-radius: 2rem;
+    }
+    .messenger_lists {
+        margin-top: -1em;
+        display: -webkit-inline-box!important;
+    }
+    .whom h1 {
+        margin-bottom: 2em;
+    }
+    .mtm6 {
+        margin-top: 6em;
+    }
+    .mmt0 {
+        margin-top: 0em;
+    }
+    .m-disp {
+        display: block;
+    }
+    .user_menu button {
+        width: 75%;
+        border-radius: 0.1em;
+    }
+    .content__card {
+        margin-top: -2em;
+    }
+    .caroosel-mobile {
+        width: 50%;
+        margin: 0 auto;
+        font-size: 1.3em;
+    }
+    .caroosel-mobile a#prev {
+        position: relative;
+        right: -1.1em;
+    }
+    .caroosel-mobile a#next {
+        position: relative;
+        left: -1.1em;
+    }
+    .chart {
+        min-width: 80%;
+    }
+    .rec412 {
+        display: inline-block;
+        margin: 4% 0%;
+    }
+    .content {
+        padding: 2em 1em 2em 1em;
+        display: block;
+    }
+    .center {
         text-align: center;
     }
-    .gadjet i {
-        color: rgb(218, 79, 79);
+    #item {
+        display: none;
+    }
+    .d-flex {
+        display: block;
+    }
+    .chart {
+        width: 80%;
+        height: 90%;
+    }
+    .mt0 {
+        margin-top: 0em;
+    }
+    .top-10 {
+        margin-top: 10%;
+    }
+    /* !!!!!!!!!!!!! */
+    header {
+        display: block;
+    }
+    .zero-two {
+        width: 100%;
+    }
+    main {
+        top: 4em;
+        display: block;
+    }
+    footer {
+        display: block;
+    }
+    .d-none {
+        display: none;
+    }
+    footer .mt3 {
+        margin-top: 1.3em;
+    }
+    footer .d-flex {
+        display: block;
+    }
+    /*  */
+    .con-10 {
+        margin-top: 10%;
+    }
+    .pb-none {
+        margin-bottom: -1em;
     }
 }
 
 @media (min-width: 470px) and (max-width: 523px) {
-    header,
-    main,
-    footer {
+    .gadjet {
         display: none;
     }
-    .gadjet {
-        display: block;
-        width: 100%;
-        height: 100%;
+    .header {
+        padding: 0% 5% 0% 5%;
+    }
+    .logotype {
+        width: 15%;
+        position: absolute;
+        top: 11%;
+    }
+    p {
+        font-size: 0.8em;
+    }
+    .slog,
+    .menu,
+    .theme {
+        display: none;
+    }
+    .header__container {
         position: relative;
-        top: 10em;
+    }
+    .user_menu {
+        float: right;
+        top: 17%;
+        width: 15%;
+    }
+    #desctop_menu {
+        display: none;
+    }
+    #mobile_menu {
+        display: block;
+    }
+    .user_menu button i {
+        font-size: 1.5em;
+    }
+    h1 {
+        font-size: 1.4em;
+    }
+    h3 {
+        font-size: 1em;
+    }
+    div b {
+        font-size: 1em;
+    }
+    /* MAIN */
+    .whom-header {
+        border-radius: 0rem 0rem 1rem 1rem;
+        display: block;
+        padding: 0em 1em 4em 1em;
+    }
+    .whom {
+        padding: 4em 1em 4em 1em;
+        display: block;
+        border-radius: 2rem;
+    }
+    .messenger_lists {
+        margin-top: -1em;
+        display: -webkit-inline-box!important;
+    }
+    .whom h1 {
+        margin-bottom: 2em;
+    }
+    .mtm6 {
+        margin-top: 6em;
+    }
+    .mmt0 {
+        margin-top: 0em;
+    }
+    .m-disp {
+        display: block;
+    }
+    .user_menu button {
+        width: 90%;
+        border-radius: 0.1em;
+    }
+    .content__card {
+        margin-top: -2em;
+    }
+    .caroosel-mobile {
+        width: 50%;
+        margin: 0 auto;
+        font-size: 1.3em;
+    }
+    .caroosel-mobile a#prev {
+        position: relative;
+        right: -1.1em;
+    }
+    .caroosel-mobile a#next {
+        position: relative;
+        left: -1.1em;
+    }
+    .chart {
+        min-width: 100%;
+    }
+    .rec412 {
+        display: inline-block;
+        margin: 4% 0%;
+    }
+    .content {
+        padding: 2em 1em 2em 1em;
+        display: block;
+    }
+    .center {
         text-align: center;
     }
-    .gadjet i {
-        color: rgb(218, 79, 79);
+    #item {
+        display: none;
+    }
+    .d-flex {
+        display: block;
+    }
+    .chart {
+        width: 100%;
+        height: 100%;
+    }
+    .mt0 {
+        margin-top: 0em;
+    }
+    .top-10 {
+        margin-top: 10%;
+    }
+    /* !!!!!!!!!!!!! */
+    header {
+        display: block;
+    }
+    .zero-two {
+        width: 100%;
+    }
+    main {
+        top: 4em;
+        display: block;
+    }
+    footer {
+        display: block;
+    }
+    .d-none {
+        display: none;
+    }
+    footer .mt3 {
+        margin-top: 1.3em;
+    }
+    footer .d-flex {
+        display: block;
+    }
+    /*  */
+    .con-10 {
+        margin-top: 10%;
+    }
+    .pb-none {
+        margin-bottom: -1em;
     }
 }
