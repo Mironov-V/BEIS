@@ -6,6 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BEIS</title>
+
+    <!-- Color theme -->
+    <link id="theme_active" rel="stylesheet" href="static/access/css/color_days.css" type="text/css">
+    <script src="static/access/scripts/setttings.js" defer></script>
+
     <link rel="stylesheet" href="static/access/css/style.css" type="text/css">
     <!-- Desktop -->
     <link rel="stylesheet" href="static/access/css/desctop.css" type="text/css">
@@ -15,12 +20,43 @@
     <link rel="stylesheet" href="static/access/css/mobile.css" type="text/css">
     <!-- Grid System -->
     <link rel="stylesheet" href="static/access/css/columns.css" type="text/css">
+    <!-- Modals -->
+    <link rel="stylesheet" href="static/access/css/modals.css" type="text/css">
 </head>
 
 <body>
+    <!-- Ограничитель экранов -->
     <div class="gadjet">
         <h3>Поверните устройство <i class="fas fa-tablet-alt"></i></h3>
         <p>Данные размеры экрана временно не поддерживаются</p>
+    </div>
+
+    <!-- Модалка для видео на превью странице -->
+    <div id="modal" class="modal" style="display: none;">
+        <i id="closeVideoModal" class="far fa-times-circle"></i>
+        <div class="modal__window">
+            <div class="modal__window-video">
+                <iframe src="https://www.youtube.com/embed/7NOSDKb0HlU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- Мобильное меню -->
+    <div id="mobileMenu" style="display: none;">
+        <ul>
+            <a href="#">
+                <li><i class="fas fa-plus-circle"></i> Создать бота</li>
+            </a>
+            <a href="#">
+                <li><i class="fas fa-book-open"></i> База знаний</li>
+            </a>
+            <a href="#">
+                <li><i class="fas fa-question-circle"></i> FAQ</li>
+            </a>
+            <a href="#">
+                <li><i class="fas fa-cart-arrow-down"></i> Магазин шаблонов</li>
+            </a>
+        </ul>
     </div>
     <header class="header">
         <!-- <div class="header__container"> -->
@@ -48,9 +84,9 @@
 
         <div class="header__container theme">
             <!-- Ночная подсветка -->
-            <i class="fas fa-moon"></i>
+            <i id="color_night_activate" class="fas fa-moon" style="display: contents;"></i>
             <!-- Дневная подсветка -->
-            <!-- <i class="fas fa-sun"></i> -->
+            <i id="color_days_activate" class="fas fa-sun" style="display: none;"></i>
         </div>
 
         <div class="header__container user_menu">
@@ -185,7 +221,7 @@
             <div class="lg-12 mt5 d-flex">
                 <div class="lg-5  d-none">
                     <img src="static/access/img/monitor.png" alt="Video" class="img_fluid">
-                    <span class="wrap-image"><i class="far fa-play-circle"></i></span>
+                    <span id="windowVideoOpen" class="wrap-image"><i class="far fa-play-circle"></i></span>
                 </div>
                 <div class="lg-5 mob-12 right mtm6">
                     <h3>
@@ -234,7 +270,7 @@
             <div class="content__container d-flex">
                 <div class="zero-two">
                     <h1>Готовы начать?</h1>
-                    <button class="btn">Создать чат бота</button>
+                    <a href="construct.html"><button class="btn">Создать чат бота</button></a>
                 </div>
             </div>
         </div>
@@ -265,6 +301,9 @@
     </footer>
 
     <script src="https://kit.fontawesome.com/8b9970d558.js" crossorigin="anonymous"></script>
+    <script src="static/access/scripts/item_val.js"></script>
+    <script src="static/access/scripts/menu.js"></script>
+    <script src="static/access/scripts/modals.js"></script>
 </body>
 
 </html>

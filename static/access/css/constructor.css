@@ -1,0 +1,121 @@
+.constructor {
+    width: 100%;
+    height: 35rem;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    padding: 3em 0em 3em 0em;
+    background-color: #99b8ec;
+}
+
+.vertical {
+    position: relative;
+    left: 50%;
+}
+
+line {
+    stroke: rgb(110 156 235);
+    stroke-width: 5;
+}
+
+.constructor__conteiner-card {
+    width: 20%;
+    border-radius: 0.5em;
+    background-color: #fff;
+    padding: 1.2em;
+    box-shadow: 1px 1px 9px 1px rgb(60 64 67 / 30%);
+    cursor: default;
+}
+
+.constructor__conteiner-card_add {
+    background-color: #99b8ec;
+    border: dotted;
+    border-color: white;
+    color: #fff;
+    padding: 1.2em;
+    width: 20%;
+    border-radius: 0.5em;
+    box-shadow: 1px 1px 9px 1px rgb(60 64 67 / 30%);
+    cursor: default;
+    cursor: pointer;
+}
+
+.constructor__conteiner-card_add>.fa-plus-circle {
+    display: block;
+    text-align: center;
+    font-size: 2em;
+    color: #6f9ceb;
+}
+
+.wraps {
+    width: 82%;
+}
+
+.constructor__conteiner-settings {
+    width: 18%;
+    background-color: #fff;
+    box-shadow: 1px 1px 9px 1px rgb(60 64 67 / 30%);
+    cursor: default;
+    position: fixed;
+    top: 5em;
+    right: 0;
+    bottom: 0em;
+    padding: 1em;
+}
+
+.ctr {
+    height: 65%;
+}
+
+#key {
+    margin-bottom: 1.5em;
+}
+
+#key input {
+    padding: 6%;
+    border-radius: 0.8em;
+    border: none;
+    background-color: #e2dddd;
+    color: #1c3457;
+    font-weight: bold;
+    margin: auto;
+    display: block;
+}
+
+#messengers,
+#plugins {
+    width: 85%;
+    margin: auto;
+    padding: 1em;
+    background-color: #fff;
+    box-shadow: 1px 1px 9px 1px rgb(60 64 67 / 30%);
+    margin-bottom: 1em;
+    cursor: pointer;
+}
+
+#messengers i,
+#plugins i {
+    font-size: 1.3em;
+}
+
+
+/* btn */
+
+.success {
+    width: 80%;
+    padding: 5% 3% 5% 3%;
+    font-size: 1.2em;
+    margin: auto;
+}
+
+.result {
+    cursor: pointer;
+    width: 80%;
+    padding: 4% 3% 4% 3%;
+    font-size: 1.2em;
+    display: block;
+    margin: auto;
+    background-color: #fff;
+    border: solid 0.2em #1c3457;
+    border-radius: 2em;
+}

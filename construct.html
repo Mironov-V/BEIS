@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BEIS</title>
+
+    <!-- Color theme -->
+    <link id="theme_active" rel="stylesheet" href="static/access/css/color_days.css" type="text/css">
+    <script src="static/access/scripts/setttings.js" defer></script>
+
+    <link rel="stylesheet" href="static/access/css/style.css" type="text/css">
+    <!-- Desktop -->
+    <link rel="stylesheet" href="static/access/css/desctop.css" type="text/css">
+    <!-- Tablet -->
+    <link rel="stylesheet" href="static/access/css/tablet.css" type="text/css">
+    <!-- Mobile -->
+    <link rel="stylesheet" href="static/access/css/mobile.css" type="text/css">
+    <!-- Grid System -->
+    <link rel="stylesheet" href="static/access/css/columns.css" type="text/css">
+    <!-- Modals -->
+    <link rel="stylesheet" href="static/access/css/modals.css" type="text/css">
+    <!-- App's -->
+    <link rel="stylesheet" href="static/access/css/constructor.css" type="text/css">
+</head>
+
+<body>
+    <!-- Ограничитель экранов -->
+    <div class="gadjet">
+        <h3>Поверните устройство <i class="fas fa-tablet-alt"></i></h3>
+        <p>Данные размеры экрана временно не поддерживаются</p>
+    </div>
+
+    <!-- Модалка для видео на превью странице -->
+    <div id="modal" class="modal" style="display: none;">
+        <i id="closeVideoModal" class="far fa-times-circle"></i>
+        <div class="modal__window">
+            <div class="modal__window-video">
+                <iframe src="https://www.youtube.com/embed/7NOSDKb0HlU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- Мобильное меню -->
+    <div id="mobileMenu" style="display: none;">
+        <ul>
+            <a href="#">
+                <li><i class="fas fa-plus-circle"></i> Создать бота</li>
+            </a>
+            <a href="#">
+                <li><i class="fas fa-book-open"></i> База знаний</li>
+            </a>
+            <a href="#">
+                <li><i class="fas fa-question-circle"></i> FAQ</li>
+            </a>
+            <a href="#">
+                <li><i class="fas fa-cart-arrow-down"></i> Магазин шаблонов</li>
+            </a>
+        </ul>
+    </div>
+    <header class="header">
+        <!-- <div class="header__container"> -->
+        <div class="header__container logotype">
+            <img src="static/access/img/logotype.png" alt="BEIS" class="img_fluid">
+        </div>
+
+        <div class="header__container slog">
+            <span>
+                Создай бота без<br>единой строчки
+                кода
+            </span>
+        </div>
+
+        <div class="header__container menu">
+            <ul class="menu">
+                <li class="item">
+                    <a href="construct.html">Создать бота</a></li>
+                <li class="item"><a href="knowledge_base.html">База знаний</a></li>
+                <li class="item"><a href="faq.html">FAQ</a></li>
+
+                <li class="item"><a href="market.html">Магазин шаблонов</a></li>
+            </ul>
+        </div>
+
+        <div class="header__container theme">
+            <!-- Ночная подсветка -->
+            <i id="color_night_activate" class="fas fa-moon" style="display: contents;"></i>
+            <!-- Дневная подсветка -->
+            <i id="color_days_activate" class="fas fa-sun" style="display: none;"></i>
+        </div>
+
+        <div class="header__container user_menu">
+            <!-- Если гость -->
+            <a id="desctop_menu" href="login.html">
+                <button><i class="fas fa-sign-in-alt"></i> Войти</button>
+            </a>
+            <!-- Пользователь аторизовался -->
+            <button id="mobile_menu"><i class="fas fa-bars"></i></button>
+        </div>
+        <!-- </div> -->
+    </header>
+    <main>
+        <div class="constructor">
+            <div class="wraps">
+                <div class="constructor__conteiner-card center">Block</div>
+                <!-- <div class="line"></div> -->
+                <svg class="vertical" height="30%" width="1%">
+                    <line x1="0" y1="0" x2="0" y2="1000"></line>
+                </svg>
+                <div class="constructor__conteiner-card_add center"><i class="fas fa-plus-circle"></i></div>
+            </div>
+            <!-- Widjet settings block -->
+            <div class="constructor__conteiner-settings">
+                <div class="mt2"></div>
+                <h3 class="text-center">Настройки</h3>
+                <div class="ctr">
+                    <div class="mt1"></div>
+                    <div id="key">
+                        <form>
+                            <label>Ваш access key:</label>
+                            <div class="mt1"></div>
+                            <input type="text" placeholder="Введите access-key" value="">
+                        </form>
+                    </div>
+                    <div id="messengers">
+                        <i class="fas fa-th-list"></i>
+                        <p>Мессенджеры</p>
+                    </div>
+                    <div id="plugins">
+                        <i class="fas fa-th-large"></i>
+                        <p>Плагины</p>
+                    </div>
+                </div>
+                <button id="result_construct" type="button" class="result">Результат</button>
+                <div class="mt1"></div>
+                <button type="button" class="btn success">Завершить</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://kit.fontawesome.com/8b9970d558.js" crossorigin="anonymous"></script>
+    <script src="static/access/scripts/item_val.js"></script>
+    <script src="static/access/scripts/menu.js"></script>
+    <script src="static/access/scripts/modals.js"></script>
+</body>
+
+</html>
