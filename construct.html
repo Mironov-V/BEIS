@@ -5,11 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BEIS</title>
+    <title>BEIS - создать чат бота</title>
 
     <!-- Color theme -->
     <link id="theme_active" rel="stylesheet" href="static/access/css/color_days.css" type="text/css">
-    <script src="static/access/scripts/setttings.js" defer></script>
+    <script src="static/access/scripts/settings.js" defer></script>
 
     <link rel="stylesheet" href="static/access/css/style.css" type="text/css">
     <!-- Desktop -->
@@ -60,10 +60,62 @@
             </a>
         </ul>
     </div>
+
+    <!-- Message of successful bot build -->
+    <div id="widget_success" class="success_window" style="display: none;">
+        <i class="fas fa-check text-center"></i>
+        <h3 class="text-center">Спасибо, ваш бот уже собирается.</h3>
+        <progress value="10" max="100"></progress>
+    </div>
+
+    <!-- Window widget with messengers  -->
+    <div id="widget_messenger" class="messenger" style="display: none;">
+        <div class="messenger__item"><i class="fab fa-telegram-plane"></i></div>
+        <div class="messenger__item"><i class="fab fa-vk"></i></div>
+        <div class="messenger__item"><i class="fab fa-instagram"></i></div>
+        <div class="messenger__item"><i class="fab fa-viber"></i></div>
+        <div class="messenger__item"><i class="fab fa-facebook-messenger"></i></div>
+        <div class="messenger__item"><i class="fab fa-whatsapp"></i></div>
+        <div class="mess-btn"> <a>Выбрать</a> <a id="close_widget_messenger">Отмена</a></div>
+    </div>
+
+    <!-- Plugin Selection Widget -->
+    <div id="widget_plugin" class="plugins" style="display: none;">
+        <div class="plugins__header"><i id="close_widget_plugin" class="far fa-times-circle"></i></div>
+        <div class="plugins__list">
+            <div class="plugins__list-item">
+                <p><i class="fas fa-link"></i> Referal</p>
+            </div>
+            <div class="plugins__list-item">
+                <p><i class="fas fa-chart-line"></i> Statistic</p>
+            </div>
+            <div class="plugins__list-item plugin_active">
+                <p><i class="fas fa-user-shield"></i> Admin</p>
+            </div>
+            <div class="plugins__list-item">
+                <p><i class="far fa-comments"></i> Chats</p>
+            </div>
+            <div class="plugins__list-item plugin_active">
+                <p><i class="fas fa-tasks"></i> Orders</p>
+            </div>
+            <div class="plugins__list-item">
+                <p><i class="fas fa-user-tag"></i> Ankets</p>
+            </div>
+            <div class="plugins__list-item plugin_active">
+                <p><i class="fas fa-share-square"></i> Sendler</p>
+            </div>
+            <div class="plugins__list-item">
+                <p><i class="fas fa-sitemap"></i> Menejers</p>
+            </div>
+            <div class="plugins__list-item">
+                <p><i class="fas fa-shopping-basket"></i> Market</p>
+            </div>
+        </div>
+    </div>
     <header class="header">
         <!-- <div class="header__container"> -->
         <div class="header__container logotype">
-            <img src="static/access/img/logotype.png" alt="BEIS" class="img_fluid">
+            <a href="index.html"><img src="static/access/img/logotype.png" alt="BEIS" class="img_fluid"></a>
         </div>
 
         <div class="header__container slog">
@@ -104,14 +156,21 @@
     <main>
         <div class="constructor">
             <div class="wraps">
-                <div class="constructor__conteiner-card center">Block</div>
-                <!-- <div class="line"></div> -->
-                <svg class="vertical" height="30%" width="1%">
+
+
+                <div class="constructor__conteiner-card center">
+                    <h3 class="text-center">Старт</h3>
+                </div>
+                <div class="line"></div>
+                <!-- <svg class="vertical" height="30%" width="1%">
                     <line x1="0" y1="0" x2="0" y2="1000"></line>
-                </svg>
+                </svg> -->
                 <div class="constructor__conteiner-card_add center"><i class="fas fa-plus-circle"></i></div>
+
+
+
             </div>
-            <!-- Widjet settings block -->
+            <!-- Widget settings block -->
             <div class="constructor__conteiner-settings">
                 <div class="mt2"></div>
                 <h3 class="text-center">Настройки</h3>
@@ -124,26 +183,25 @@
                             <input type="text" placeholder="Введите access-key" value="">
                         </form>
                     </div>
-                    <div id="messengers">
+                    <div id="open_widget_messenger">
                         <i class="fas fa-th-list"></i>
                         <p>Мессенджеры</p>
                     </div>
-                    <div id="plugins">
+                    <div id="open_widget_plugin">
                         <i class="fas fa-th-large"></i>
                         <p>Плагины</p>
                     </div>
                 </div>
                 <button id="result_construct" type="button" class="result">Результат</button>
                 <div class="mt1"></div>
-                <button type="button" class="btn success">Завершить</button>
+                <button id="success" type="button" class="btn success">Завершить</button>
             </div>
         </div>
     </main>
 
     <script src="https://kit.fontawesome.com/8b9970d558.js" crossorigin="anonymous"></script>
-    <script src="static/access/scripts/item_val.js"></script>
     <script src="static/access/scripts/menu.js"></script>
-    <script src="static/access/scripts/modals.js"></script>
+    <script src="static/access/scripts/widgets.js"></script>
 </body>
 
 </html>

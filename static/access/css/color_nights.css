@@ -45,7 +45,7 @@ a {
 }
 
 .btn {
-    background-color: #fff;
+    background-color: #1c283a;
     color: #fff;
     background: linear-gradient(to right, #95c3f3, #b86bbd);
 }
@@ -130,4 +130,127 @@ a.active-item {
 
 .user_menu a button {
     color: #fff;
+}
+
+
+/* Constructor */
+
+.constructor {
+    background-color: #324661;
+}
+
+.constructor__conteiner-card {
+    background-color: #1c283a;
+    box-shadow: 1px 1px 9px 1px rgb(60 64 67 / 30%);
+}
+
+.constructor__conteiner-card_add {
+    background-color: #324661;
+    border-color: white;
+    color: #fff;
+    box-shadow: 1px 1px 9px 1px rgb(60 64 67 / 30%);
+}
+
+.constructor__conteiner-card_add>.fa-plus-circle {
+    color: #6f9ceb;
+}
+
+.constructor__conteiner-settings {
+    background-color: #1c283a;
+    box-shadow: 1px 1px 9px 1px rgb(60 64 67 / 30%);
+}
+
+#key input {
+    background-color: #405473a6;
+    color: #ffffff;
+}
+
+#open_widget_messenger,
+#open_widget_plugin {
+    background-color: #1c283a;
+    box-shadow: 1px 1px 4px 2px rgb(97 122 162);
+}
+
+.result {
+    background-color: #1c283a;
+    border: solid 0.2em #1c3457;
+}
+
+#result_construct {
+    box-shadow: 1px 1px 9px 1px rgb(153 185 237);
+}
+
+
+/* Line's */
+
+.line {
+    border-color: #6e9ceb;
+}
+
+.line-left {
+    border-color: #6e9ceb;
+}
+
+
+/* widget */
+
+.messenger {
+    box-shadow: 1px 1px 9px 1px rgb(60 64 67 / 30%);
+    background-color: #1c283a;
+}
+
+.messenger__item {
+    background-color: #1c283a;
+    box-shadow: 1px 1px 9px 1px rgb(60 64 67 / 30%);
+}
+
+.plugins {
+    background: #fff;
+    box-shadow: 1px 1px 9px 1px rgb(60 64 67 / 30%);
+}
+
+.plugins__list-item {
+    background-color: #1c283a;
+    box-shadow: 1px 1px 9px 1px rgb(60 64 67 / 30%);
+}
+
+.success_window {
+    box-shadow: 1px 1px 9px 1px rgb(60 64 67 / 30%);
+    background-color: #1c283a;
+}
+
+i.fa-check {
+    color: #49d649;
+}
+
+.plugin_active {
+    background-color: #bad8ff;
+}
+
+#result_construct,
+label {
+    color: #fff;
+}
+
+#open_widget_messenger,
+#open_widget_plugin,
+.messenger__item,
+#close_widget_plugin {
+    color: #fff;
+}
+
+#widget_plugin {
+    background-color: #1c283a;
+}
+
+.plugin_active {
+    background-color: #2c3e54;
+}
+
+
+/* Hover */
+
+.plugins__list-item:hover {
+    box-shadow: 1px 1px 8px 2px rgb(95 106 125);
+    background-color: #1b2e40;
 }

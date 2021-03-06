@@ -47,6 +47,13 @@ h6 {
     font-weight: bold;
 }
 
+progress {
+    margin: 0 auto;
+    display: block;
+    width: 70%;
+    padding: 1.2em;
+}
+
 span,
 a {
     text-decoration: none;

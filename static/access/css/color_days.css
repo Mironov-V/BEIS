@@ -131,3 +131,102 @@ a.active-item {
 .user_menu a button {
     color: #fff;
 }
+
+
+/* Constructor */
+
+.constructor {
+    background-color: #99b8ec;
+}
+
+.constructor__conteiner-card {
+    background-color: #fff;
+    box-shadow: 1px 1px 9px 1px rgb(60 64 67 / 30%);
+}
+
+.constructor__conteiner-card_add {
+    background-color: #99b8ec;
+    border-color: white;
+    color: #fff;
+    box-shadow: 1px 1px 9px 1px rgb(60 64 67 / 30%);
+}
+
+.constructor__conteiner-card_add>.fa-plus-circle {
+    color: #6f9ceb;
+}
+
+.constructor__conteiner-settings {
+    background-color: #fff;
+    box-shadow: 1px 1px 9px 1px rgb(60 64 67 / 30%);
+}
+
+#key input {
+    background-color: #e2dddd;
+    color: #1c3457;
+}
+
+#open_widget_messenger,
+#open_widget_plugin {
+    background-color: #fff;
+    box-shadow: 1px 1px 9px 1px rgb(60 64 67 / 30%);
+}
+
+.result {
+    background-color: #fff;
+    border: solid 0.2em #1c3457;
+}
+
+
+/* Line's */
+
+.line {
+    border-color: #6e9ceb;
+}
+
+.line-left {
+    border-color: #6e9ceb;
+}
+
+
+/* widget */
+
+.messenger {
+    box-shadow: 1px 1px 9px 1px rgb(60 64 67 / 30%);
+    background-color: #fff;
+}
+
+.messenger__item {
+    background-color: #fff;
+    box-shadow: 1px 1px 9px 1px rgb(60 64 67 / 30%);
+}
+
+.plugins {
+    background: #fff;
+    box-shadow: 1px 1px 9px 1px rgb(60 64 67 / 30%);
+}
+
+.plugins__list-item {
+    background-color: #fff;
+    box-shadow: 1px 1px 9px 1px rgb(60 64 67 / 30%);
+}
+
+.success_window {
+    box-shadow: 1px 1px 9px 1px rgb(60 64 67 / 30%);
+    background-color: #fff;
+}
+
+i.fa-check {
+    color: #49d649;
+}
+
+.plugin_active {
+    background-color: #bad8ff;
+}
+
+
+/* Hover */
+
+.plugins__list-item:hover {
+    box-shadow: 1px 1px 13px 1px rgb(95 106 125);
+    background-color: #f6f7f8;
+}
