@@ -111,6 +111,10 @@
                 <p><i class="fas fa-shopping-basket"></i> Market</p>
             </div>
         </div>
+        <div class="plugins__footer">
+            <a id="plugins_ok">Выбрать</a>
+
+        </div>
     </div>
     <header class="header">
         <!-- <div class="header__container"> -->
@@ -165,7 +169,7 @@
                 <!-- <svg class="vertical" height="30%" width="1%">
                     <line x1="0" y1="0" x2="0" y2="1000"></line>
                 </svg> -->
-                <div class="constructor__conteiner-card_add center"><i class="fas fa-plus-circle"></i></div>
+                <div id="step_1" class="constructor__conteiner-card_add center"><i class="fas fa-plus-circle"></i></div>
 
 
 
@@ -176,6 +180,13 @@
                 <h3 class="text-center">Настройки</h3>
                 <div class="ctr">
                     <div class="mt1"></div>
+                    <div id="name">
+                        <form>
+                            <label>Введите имя бота:</label>
+                            <div class="mt1"></div>
+                            <input type="text" placeholder="Введите имя для отображения в панели" value="">
+                        </form>
+                    </div>
                     <div id="key">
                         <form>
                             <label>Ваш access key:</label>
@@ -192,8 +203,8 @@
                         <p>Плагины</p>
                     </div>
                 </div>
-                <button id="result_construct" type="button" class="result">Результат</button>
-                <div class="mt1"></div>
+                <!-- <button id="result_construct" type="button" class="result">Результат</button> -->
+                <div class="mt4"></div>
                 <button id="success" type="button" class="btn success">Завершить</button>
             </div>
         </div>
@@ -202,6 +213,7 @@
     <script src="https://kit.fontawesome.com/8b9970d558.js" crossorigin="anonymous"></script>
     <script src="static/access/scripts/menu.js"></script>
     <script src="static/access/scripts/widgets.js"></script>
+    <script src="static/access/scripts//construct/main.js"></script>
 </body>
 
 </html>

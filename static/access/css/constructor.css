@@ -57,11 +57,13 @@ line {
     height: 65%;
 }
 
-#key {
+#key,
+#name {
     margin-bottom: 1.5em;
 }
 
-#key input {
+#key input,
+#name input {
     padding: 6%;
     border-radius: 0.8em;
     border: none;
@@ -189,6 +191,16 @@ line {
     top: 0.5em;
     cursor: pointer;
     width: 1em;
+}
+
+.plugins__footer {
+    padding: 0.5em;
+}
+
+.plugins__footer a {
+    cursor: pointer;
+    position: relative;
+    left: 75%;
 }
 
 .plugins__list {
