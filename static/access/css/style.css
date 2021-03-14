@@ -32,9 +32,18 @@ footer p {
     font-size: 0.9em;
 }
 
-p {
+p,
+select {
     font-size: 1.2em;
     font-family: 'Jaldi', sans-serif;
+}
+
+select {
+    width: 90%;
+    border-radius: 0.4em;
+    background-color: #fff;
+    color: #1c3457;
+    font-weight: bold;
 }
 
 h1,
@@ -145,4 +154,8 @@ main p {
 
 .mt5 {
     margin-top: 5em;
+}
+
+.pl2 {
+    padding-left: 2em;
 }

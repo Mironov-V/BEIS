@@ -274,6 +274,118 @@
     text-align: center;
 }
 
+.filter button {
+    width: 37%;
+    height: 2.5em;
+}
+
+
+/* PIZDEC */
+
+.filter__items {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 1em;
+    display: block;
+    border-radius: 1em;
+    box-shadow: 0px 0px 10px 7px rgb(60 64 67 / 30%);
+    padding: 1em;
+}
+
+.filter__items-item {
+    width: 49%;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.cenchek3 input {
+    position: absolute;
+    left: -9999px;
+}
+
+.cenchek3 label {
+    margin: 1em;
+}
+
+.sliderce {
+    position: relative;
+    display: block;
+    width: 4em;
+    height: 2em;
+    cursor: pointer;
+    border-radius: 1.5em;
+    transition: 350ms;
+    background: #9bb3e9;
+    float: left;
+    margin: 10px 10px 0;
+}
+
+.sliderce::after {
+    position: absolute;
+    content: '';
+    width: 2em;
+    height: 2em;
+    top: 0em;
+    left: 0em;
+    border-radius: 1.5em;
+    transition: width 200ms ease-out, height 300ms 50ms ease-in, top 300ms 50ms ease-in, left 250ms 50ms ease-in, box-shadow 300ms ease-in;
+    background: #272c52;
+    box-shadow: 0 0 0 1.5em #5c618a inset;
+}
+
+input:checked+.sliderce::after {
+    width: 2em;
+    height: 2em;
+    top: 0;
+    left: 2em;
+    box-shadow: 0 0 0 0 #f2f2f2 inset;
+}
+
+.cek3 {
+    float: left;
+}
+
+
+/* PIZDEC */
+
+.content__card-img {
+    width: 100%;
+    height: 12em;
+    background-position: center!important;
+    background-repeat: no-repeat!important;
+    background-size: cover!important;
+    position: relative;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.content__wrapp_link {
+    font-size: 1.1em;
+}
+
+.content__pagination {
+    width: 100%;
+}
+
+.content__pagination-item {
+    width: 5%;
+    text-align: center;
+    background-color: #272c52;
+    margin: 0.1em;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.content__pagination-item a {
+    color: #fff;
+    width: 100%;
+    display: block;
+    cursor: pointer;
+}
+
 
 /* hover */
 
@@ -294,6 +406,12 @@ a.active-item {
 
 .wrap-image:hover i {
     transition: .5s;
+}
+
+.content__pagination-item:hover,
+.content__pagination-active {
+    transition: .5s;
+    background-color: #84457a;
 }
 
 

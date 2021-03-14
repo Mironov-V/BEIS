@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BEIS</title>
+
+    <!-- Color theme -->
+    <link id="theme_active" rel="stylesheet" href="static/access/css/color_days.css" type="text/css">
+    <script src="static/access/scripts/settings.js" defer></script>
+
+    <link rel="stylesheet" href="static/access/css/style.css" type="text/css">
+    <!-- Desktop -->
+    <link rel="stylesheet" href="static/access/css/desctop.css" type="text/css">
+    <!-- Tablet -->
+    <link rel="stylesheet" href="static/access/css/tablet.css" type="text/css">
+    <!-- Mobile -->
+    <link rel="stylesheet" href="static/access/css/mobile.css" type="text/css">
+    <!-- Grid System -->
+    <link rel="stylesheet" href="static/access/css/columns.css" type="text/css">
+    <!-- Modals -->
+    <link rel="stylesheet" href="static/access/css/modals.css" type="text/css">
+</head>
+
+<body>
+    <!-- Ограничитель экранов -->
+    <div class="gadjet">
+        <h3>Поверните устройство <i class="fas fa-tablet-alt"></i></h3>
+        <p>Данные размеры экрана временно не поддерживаются</p>
+    </div>
+
+    <!-- Модалка для видео на превью странице -->
+    <div id="modal" class="modal" style="display: none;">
+        <i id="closeVideoModal" class="far fa-times-circle"></i>
+        <div class="modal__window">
+            <div class="modal__window-video">
+                <iframe src="https://www.youtube.com/embed/7NOSDKb0HlU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- Мобильное меню -->
+    <div id="mobileMenu" style="display: none;">
+        <ul>
+            <a href="#">
+                <li><i class="fas fa-plus-circle"></i> Создать бота</li>
+            </a>
+            <a href="#">
+                <li><i class="fas fa-book-open"></i> База знаний</li>
+            </a>
+            <a href="#">
+                <li><i class="fas fa-question-circle"></i> FAQ</li>
+            </a>
+            <a href="#">
+                <li><i class="fas fa-cart-arrow-down"></i> Магазин шаблонов</li>
+            </a>
+        </ul>
+    </div>
+    <header class="header">
+        <!-- <div class="header__container"> -->
+        <div class="header__container logotype">
+            <a href="index.html"><img src="static/access/img/logotype.png" alt="BEIS" class="img_fluid"></a>
+        </div>
+
+        <div class="header__container slog">
+            <span>
+                Создай бота без<br>единой строчки
+                кода
+            </span>
+        </div>
+
+        <div class="header__container menu">
+            <ul class="menu">
+                <li class="item">
+                    <a href="construct.html">Создать бота</a></li>
+                <li class="item"><a href="knowledge_base.html">База знаний</a></li>
+                <li class="item"><a href="faq.html">FAQ</a></li>
+
+                <li class="item"><a href="market.html">Магазин шаблонов</a></li>
+            </ul>
+        </div>
+
+        <div class="header__container theme">
+            <!-- Ночная подсветка -->
+            <i id="color_night_activate" class="fas fa-moon" style="display: contents;"></i>
+            <!-- Дневная подсветка -->
+            <i id="color_days_activate" class="fas fa-sun" style="display: none;"></i>
+        </div>
+
+        <div class="header__container user_menu">
+            <!-- Если гость -->
+            <a id="desctop_menu" href="login.html">
+                <button><i class="fas fa-sign-in-alt"></i> Войти</button>
+            </a>
+            <!-- Пользователь аторизовался -->
+            <button id="mobile_menu"><i class="fas fa-bars"></i></button>
+        </div>
+        <!-- </div> -->
+    </header>
+    <main>
+        <div class="content">
+            <div class="lg-6">
+                <!-- 1 -->
+                <a class="content__wrapp_link" href="lesson.html">
+                    <div class="content__card mt2">
+                        <div class="content__card-img lg-4" style="background-image: url('https://i.pinimg.com/736x/29/38/a3/2938a3b0772876c56082d65731c23692.jpg');"></div>
+                        <div class="content__card-description pl2 lg-6">
+                            <h3>Title</h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore illo maiores numquam ratione officia velit maxime eum asperiores ipsa ex quidem unde earum nobis quis, nihil repudiandae ipsum quo cumque!</p>
+                        </div>
+                    </div>
+                </a>
+                <!--  -->
+
+                <!-- 2 -->
+                <a class="content__wrapp_link" href="lesson.html">
+                    <div class="content__card mt2">
+                        <div class="content__card-img lg-4" style="background-image: url('https://pbs.twimg.com/media/B_573o6VIAAMgil.png');"></div>
+                        <div class="content__card-description pl2 lg-6">
+                            <h3>Title</h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore illo maiores numquam ratione officia velit maxime eum asperiores ipsa ex quidem unde earum nobis quis, nihil repudiandae ipsum quo cumque!</p>
+                        </div>
+                    </div>
+                </a>
+                <!--  -->
+
+                <!-- 3 -->
+                <a class="content__wrapp_link" href="lesson.html">
+                    <div class="content__card mt2">
+                        <div class="content__card-img lg-4" style="background-image: url('https://ru.epicstars.com/wp-content/uploads/2019/04/instagram-2151050_1280.png');"></div>
+                        <div class="content__card-description pl2 lg-6">
+                            <h3>Title</h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore illo maiores numquam ratione officia velit maxime eum asperiores ipsa ex quidem unde earum nobis quis, nihil repudiandae ipsum quo cumque!</p>
+                        </div>
+                    </div>
+                </a>
+                <!--  -->
+
+                <!-- 4 -->
+                <a class="content__wrapp_link" href="lesson.html">
+                    <div class="content__card mt2">
+                        <div class="content__card-img lg-4" style="background-image: url('https://www.pngitem.com/pimgs/m/333-3338862_whatsapp-business-solution-small-conversations-chatbot-whatsapp-how.png');"></div>
+                        <div class="content__card-description pl2 lg-6">
+                            <h3>Title</h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore illo maiores numquam ratione officia velit maxime eum asperiores ipsa ex quidem unde earum nobis quis, nihil repudiandae ipsum quo cumque!</p>
+                        </div>
+                    </div>
+                </a>
+                <!--  -->
+
+                <div class="mt5"></div>
+                <div class="content__pagination">
+                    <div class="content__pagination-item content__pagination-active">
+                        <a href="#">1</a>
+                    </div>
+                    <div class="content__pagination-item">
+                        <a href="#">2</a>
+                    </div>
+                    <div class="content__pagination-item">
+                        <a href="#">3</a>
+                    </div>
+                    <div class="content__pagination-item">
+                        <a href="#">4</a>
+                    </div>
+                    <div class="content__pagination-item">
+                        <a href="#">5</a>
+                    </div>
+                </div>
+            </div>
+            <div class="lg-4 pl2">
+                <div class="whom" style="padding: 2em 2em 2em 2em;">
+                    <h3><i class="fas fa-sliders-h"></i> Фильтр</h3>
+                    <div class="mt2"></div>
+                    <div class="filter">
+                        <form method="GET" class="filter_content">
+                            <label>Тема:</label> <br>
+                            <select>
+                                <option></option>
+                                <option value="Бизнес">Бизнес</option>
+                                <option value="Бронирование">Бронирование</option>
+                                <option value="Продажи">Продажи</option>
+                                <option value="Услуги">Услуги</option>
+                                <option value="Информирование">Информирование</option>
+                                <option value="Админка бота">Админка бота</option>
+                                <option value="Рассылки">Рассылки</option>
+                                <option value="Реферальные системы<">Реферальные системы</option>
+                                <option value="Мониторинг активности">Мониторинг активности</option>
+                                <option value="Панель управления">Панель управления</option>
+                            </select>
+                            <div class="mt2"></div>
+
+                            <div class="filter__items">
+                                <div class="filter__items-item">
+                                    <div class="cenchek3">
+                                        <div class="cek3">
+                                            <p>Telegram</p>
+                                            <input type="checkbox" id="s1" value="Telegram">
+                                            <label class="sliderce" for="s1"></label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="filter__items-item">
+                                    <div class="cenchek3">
+                                        <div class="cek3">
+                                            <p>Facebook</p>
+                                            <input type="checkbox" id="s2" value="Facebook">
+                                            <label class="sliderce" for="s2"></label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="filter__items-item">
+                                    <div class="cenchek3">
+                                        <div class="cek3">
+                                            <p>Vk</p>
+                                            <input type="checkbox" id="s3" value="Vk">
+                                            <label class="sliderce" for="s3"></label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="filter__items-item">
+                                    <div class="cenchek3">
+                                        <div class="cek3">
+                                            <p>WhatsApp</p>
+                                            <input type="checkbox" id="s4" value="WhatsApp">
+                                            <label class="sliderce" for="s4"></label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="filter__items-item">
+                                    <div class="cenchek3">
+                                        <div class="cek3">
+                                            <p>Instagram</p>
+                                            <input type="checkbox" id="s5" value="Instagram">
+                                            <label class="sliderce" for="s5"></label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="filter__items-item">
+                                    <div class="cenchek3">
+                                        <div class="cek3">
+                                            <p>Viber</p>
+                                            <input type="checkbox" id="s6" value="Viber">
+                                            <label class="sliderce" for="s6"></label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <button type="submit" class="btn right">Найти</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="d-flex">
+            <div class="lg-3 mob-12 mt3 pl-5">
+                <h2><a href="index.html">BEIS</a></h2>
+                <p>© 2021—2021, Robochat Solutions Inc.</p>
+                <p>ИП Брукс В.М. ИНН 000000000000 ОГРНИП 000000000000000 <br> г. Новосибирск, Ленина 21</p>
+            </div>
+            <div class="lg-3 mob-12 mt3 pl-5">
+                <h3>API:</h3>
+                <br>
+                <p><a href="dev.html">API</a></p>
+            </div>
+            <div class="lg-3 mob-12 mt3 pl-5">
+                <h3>Меню:</h3>
+                <br>
+                <p><a href="index.html">Главная</a></p>
+                <p><a href="construct.html">Конструктор</a></p>
+                <p><a href="knowledge_base.html">База знаний</a></p>
+                <p><a href="market/market.html">Магазин шаблонов</a></p>
+                <p><a href="faq.html">FAQ</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/8b9970d558.js" crossorigin="anonymous"></script>
+    <script src="static/access/scripts/item_val.js"></script>
+    <script src="static/access/scripts/menu.js"></script>
+    <script src="static/access/scripts/modals.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BEIS</title>
+
+    <!-- Color theme -->
+    <link id="theme_active" rel="stylesheet" href="static/access/css/color_days.css" type="text/css">
+    <script src="static/access/scripts/settings.js" defer></script>
+
+    <link rel="stylesheet" href="static/access/css/style.css" type="text/css">
+    <!-- Desktop -->
+    <link rel="stylesheet" href="static/access/css/desctop.css" type="text/css">
+    <!-- Tablet -->
+    <link rel="stylesheet" href="static/access/css/tablet.css" type="text/css">
+    <!-- Mobile -->
+    <link rel="stylesheet" href="static/access/css/mobile.css" type="text/css">
+    <!-- Grid System -->
+    <link rel="stylesheet" href="static/access/css/columns.css" type="text/css">
+    <!-- Modals -->
+    <link rel="stylesheet" href="static/access/css/modals.css" type="text/css">
+</head>
+
+<body>
+    <!-- Ограничитель экранов -->
+    <div class="gadjet">
+        <h3>Поверните устройство <i class="fas fa-tablet-alt"></i></h3>
+        <p>Данные размеры экрана временно не поддерживаются</p>
+    </div>
+
+    <!-- Модалка для видео на превью странице -->
+    <div id="modal" class="modal" style="display: none;">
+        <i id="closeVideoModal" class="far fa-times-circle"></i>
+        <div class="modal__window">
+            <div class="modal__window-video">
+                <iframe src="https://www.youtube.com/embed/7NOSDKb0HlU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- Мобильное меню -->
+    <div id="mobileMenu" style="display: none;">
+        <ul>
+            <a href="#">
+                <li><i class="fas fa-plus-circle"></i> Создать бота</li>
+            </a>
+            <a href="#">
+                <li><i class="fas fa-book-open"></i> База знаний</li>
+            </a>
+            <a href="#">
+                <li><i class="fas fa-question-circle"></i> FAQ</li>
+            </a>
+            <a href="#">
+                <li><i class="fas fa-cart-arrow-down"></i> Магазин шаблонов</li>
+            </a>
+        </ul>
+    </div>
+    <header class="header">
+        <!-- <div class="header__container"> -->
+        <div class="header__container logotype">
+            <a href="index.html"><img src="static/access/img/logotype.png" alt="BEIS" class="img_fluid"></a>
+        </div>
+
+        <div class="header__container slog">
+            <span>
+                Создай бота без<br>единой строчки
+                кода
+            </span>
+        </div>
+
+        <div class="header__container menu">
+            <ul class="menu">
+                <li class="item">
+                    <a href="construct.html">Создать бота</a></li>
+                <li class="item"><a href="knowledge_base.html">База знаний</a></li>
+                <li class="item"><a href="faq.html">FAQ</a></li>
+
+                <li class="item"><a href="market.html">Магазин шаблонов</a></li>
+            </ul>
+        </div>
+
+        <div class="header__container theme">
+            <!-- Ночная подсветка -->
+            <i id="color_night_activate" class="fas fa-moon" style="display: contents;"></i>
+            <!-- Дневная подсветка -->
+            <i id="color_days_activate" class="fas fa-sun" style="display: none;"></i>
+        </div>
+
+        <div class="header__container user_menu">
+            <!-- Если гость -->
+            <a id="desctop_menu" href="login.html">
+                <button><i class="fas fa-sign-in-alt"></i> Войти</button>
+            </a>
+            <!-- Пользователь аторизовался -->
+            <button id="mobile_menu"><i class="fas fa-bars"></i></button>
+        </div>
+        <!-- </div> -->
+    </header>
+    <main>
+        <div class="content">
+            <div class="mt5"></div>
+            <div class="mt5"></div>
+            <div class="mt5"></div>
+            <div class="mt5"></div>
+            <div class="mt5"></div>
+        </div>
+    </main>
+    <footer>
+        <div class="d-flex">
+            <div class="lg-3 mob-12 mt3 pl-5">
+                <h2><a href="index.html">BEIS</a></h2>
+                <p>© 2021—2021, Robochat Solutions Inc.</p>
+                <p>ИП Брукс В.М. ИНН 000000000000 ОГРНИП 000000000000000 <br> г. Новосибирск, Ленина 21</p>
+            </div>
+            <div class="lg-3 mob-12 mt3 pl-5">
+                <h3>API:</h3>
+                <br>
+                <p><a href="dev.html">API</a></p>
+            </div>
+            <div class="lg-3 mob-12 mt3 pl-5">
+                <h3>Меню:</h3>
+                <br>
+                <p><a href="index.html">Главная</a></p>
+                <p><a href="construct.html">Конструктор</a></p>
+                <p><a href="knowledge_base.html">База знаний</a></p>
+                <p><a href="market/market.html">Магазин шаблонов</a></p>
+                <p><a href="faq.html">FAQ</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/8b9970d558.js" crossorigin="anonymous"></script>
+    <script src="static/access/scripts/item_val.js"></script>
+    <script src="static/access/scripts/menu.js"></script>
+    <script src="static/access/scripts/modals.js"></script>
+</body>
+
+</html>

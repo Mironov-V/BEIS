@@ -70,13 +70,14 @@
 
     <!-- Window widget with messengers  -->
     <div id="widget_messenger" class="messenger" style="display: none;">
-        <div class="messenger__item"><i class="fab fa-telegram-plane"></i></div>
-        <div class="messenger__item"><i class="fab fa-vk"></i></div>
-        <div class="messenger__item"><i class="fab fa-instagram"></i></div>
-        <div class="messenger__item"><i class="fab fa-viber"></i></div>
-        <div class="messenger__item"><i class="fab fa-facebook-messenger"></i></div>
-        <div class="messenger__item"><i class="fab fa-whatsapp"></i></div>
-        <div class="mess-btn"> <a>Выбрать</a> <a id="close_widget_messenger">Отмена</a></div>
+        <div id="mjr_telegram" class="messenger__item"><i class="fab fa-telegram-plane"></i></div>
+        <div id="mjr_vk" class="messenger__item"><i class="fab fa-vk"></i></div>
+        <div id="mjr_instagram" class="messenger__item"><i class="fab fa-instagram"></i></div>
+        <div id="mjr_viber" class="messenger__item"><i class="fab fa-viber"></i></div>
+        <div id="mjr_facebook" class="messenger__item"><i class="fab fa-facebook-messenger"></i></div>
+        <div id="mjr_whatsapp" class="messenger__item"><i class="fab fa-whatsapp"></i></div>
+        <!--  -->
+        <div class="mess-btn"> <a id="add_messenger">Выбрать</a> <a id="close_widget_messenger">Отмена</a></div>
     </div>
 
     <!-- Plugin Selection Widget -->
@@ -184,14 +185,14 @@
                         <form>
                             <label>Введите имя бота:</label>
                             <div class="mt1"></div>
-                            <input type="text" placeholder="Введите имя для отображения в панели" value="">
+                            <input id="bot_name" type="text" placeholder="Введите имя для отображения в панели управления" value="">
                         </form>
                     </div>
                     <div id="key">
                         <form>
                             <label>Ваш access key:</label>
                             <div class="mt1"></div>
-                            <input type="text" placeholder="Введите access-key" value="">
+                            <input id="access_key" type="text" placeholder="Введите access-key" value="">
                         </form>
                     </div>
                     <div id="open_widget_messenger">
