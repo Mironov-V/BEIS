@@ -2,7 +2,7 @@ kwargs = {
     bot_name: "",
     access_key: "",
     messenger: {
-        telegam: true,
+        telegam: false,
         vk: false,
         instagram: false,
         viber: false,
@@ -19,18 +19,18 @@ kwargs = {
             video: ""
         }
     }],
-    plugins: [{
-        referal: [],
-        statistic: [],
-        admin: [],
-        chats: [],
-        orders: [],
-        ankets: [],
-        sendler: [],
-        menejers: [],
-        market: [],
-        quiz: []
-    }],
+    plugins: {
+        referal: [false, []],
+        statistic: [false, []],
+        admin: [false, []],
+        chats: [false, []],
+        orders: [false, []],
+        ankets: [false, []],
+        sendler: [false, []],
+        menejers: [false, []],
+        market: [false, []],
+        quiz: [false, []]
+    },
     chain_msg: [{
         text: "",
         file: {
@@ -51,12 +51,6 @@ let cls = new LibFunction;
 
 
 // function newBlock(bid = null, settings = [], new_branch = null) {}
-
-document.getElementById("plugins_ok").onclick = function() {
-    // Разрешить добавление плагинов
-
-    return document.getElementById("widget_plugin").style.display = "none";
-}
 
 
 class QueryData extends LibFunction {
@@ -292,10 +286,107 @@ class QueryData extends LibFunction {
 
     }
 
+    static settings_plugin() {
+        /* Сделать квиз виджет для прохода по всем выбранным плагинам и настроить их */
+    }
+
     static add_plugins() {
-        /*
-            ....
-        */
+        // Метод добавления плагинов в массив
+        document.getElementById("referal").onclick = function() {
+            if (kwargs.plugins.referal[0] == false) {
+                kwargs.plugins.referal[0] = true;
+                document.getElementById("referal").classList.add("plugin_active");
+            } else if (kwargs.plugins.referal[0] == true) {
+                kwargs.plugins.referal[0] = false;
+                document.getElementById("referal").classList.remove("plugin_active");
+            }
+        }
+
+        document.getElementById("statistic").onclick = function() {
+            if (kwargs.plugins.statistic[0] == false) {
+                kwargs.plugins.statistic[0] = true;
+                document.getElementById("statistic").classList.add("plugin_active");
+            } else if (kwargs.plugins.statistic[0] == true) {
+                kwargs.plugins.statistic[0] = false;
+                document.getElementById("statistic").classList.remove("plugin_active");
+            }
+        }
+
+        document.getElementById("admin").onclick = function() {
+            if (kwargs.plugins.admin[0] == false) {
+                kwargs.plugins.admin[0] = true;
+                document.getElementById("admin").classList.add("plugin_active");
+            } else if (kwargs.plugins.admin[0] == true) {
+                kwargs.plugins.admin[0] = false;
+                document.getElementById("admin").classList.remove("plugin_active");
+            }
+        }
+
+        document.getElementById("chats").onclick = function() {
+            if (kwargs.plugins.chats[0] == false) {
+                kwargs.plugins.chats[0] = true;
+                document.getElementById("chats").classList.add("plugin_active");
+            } else if (kwargs.plugins.chats[0] == true) {
+                kwargs.plugins.chats[0] = false;
+                document.getElementById("chats").classList.remove("plugin_active");
+            }
+        }
+
+        document.getElementById("orders").onclick = function() {
+            if (kwargs.plugins.orders[0] == false) {
+                kwargs.plugins.orders[0] = true;
+                document.getElementById("orders").classList.add("plugin_active");
+            } else if (kwargs.plugins.orders[0] == true) {
+                kwargs.plugins.orders[0] = false;
+                document.getElementById("orders").classList.remove("plugin_active");
+            }
+        }
+
+        document.getElementById("ankets").onclick = function() {
+            if (kwargs.plugins.ankets[0] == false) {
+                kwargs.plugins.ankets[0] = true;
+                document.getElementById("ankets").classList.add("plugin_active");
+            } else if (kwargs.plugins.ankets[0] == true) {
+                kwargs.plugins.ankets[0] = false;
+                document.getElementById("ankets").classList.remove("plugin_active");
+            }
+        }
+
+        document.getElementById("sendler").onclick = function() {
+            if (kwargs.plugins.sendler[0] == false) {
+                kwargs.plugins.sendler[0] = true;
+                document.getElementById("sendler").classList.add("plugin_active");
+            } else if (kwargs.plugins.sendler[0] == true) {
+                kwargs.plugins.sendler[0] = false;
+                document.getElementById("sendler").classList.remove("plugin_active");
+            }
+        }
+
+        document.getElementById("menejers").onclick = function() {
+            if (kwargs.plugins.menejers[0] == false) {
+                kwargs.plugins.menejers[0] = true;
+                document.getElementById("menejers").classList.add("plugin_active");
+            } else if (kwargs.plugins.menejers[0] == true) {
+                kwargs.plugins.menejers[0] = false;
+                document.getElementById("menejers").classList.remove("plugin_active");
+            }
+        }
+
+        document.getElementById("market").onclick = function() {
+            if (kwargs.plugins.market[0] == false) {
+                kwargs.plugins.market[0] = true;
+                document.getElementById("market").classList.add("plugin_active");
+            } else if (kwargs.plugins.market[0] == true) {
+                kwargs.plugins.market[0] = false;
+                document.getElementById("market").classList.remove("plugin_active");
+            }
+        }
+
+        document.getElementById("plugins_ok").onclick = function() {
+            // Проверка на выбранные плагины
+
+            return document.getElementById("widget_plugin").style.display = "none";
+        }
 
     }
 
@@ -315,12 +406,48 @@ class QueryData extends LibFunction {
 
             // Проверка на наличие секретного ключа
             if (cls.strCompact(kwargs.access_key) == false) {
-                var x = 0;
-                for (var i in kwargs.messenger) {
-                    if (kwargs.messenger[i] == true) {
-                        x += 1;
-                    }
+                console.log(kwargs.messenger)
+                var x = 0; // Счётчик
+
+                // Проверка каждого мессенджера по отельности
+                switch (kwargs.messenger.telegam) {
+                    case kwargs.messenger.telegam == true:
+                        x = 1;
+                        document.getElementById("widget_success").style.display = "block";
+                        break;
                 }
+
+                switch (kwargs.messenger.vk) {
+                    case kwargs.messenger.vk == true:
+                        x = 1;
+                        document.getElementById("widget_success").style.display = "block";
+                        break;
+                }
+                switch (kwargs.messenger.instagram) {
+                    case kwargs.messenger.instagram == true:
+                        x = 1;
+                        document.getElementById("widget_success").style.display = "block";
+                        break;
+                }
+                switch (kwargs.messenger.viber) {
+                    case kwargs.messenger.viber == true:
+                        x = 1;
+                        document.getElementById("widget_success").style.display = "block";
+                        break;
+                }
+                switch (kwargs.messenger.facebook) {
+                    case kwargs.messenger.facebook == true:
+                        x = 1;
+                        document.getElementById("widget_success").style.display = "block";
+                        break;
+                }
+                switch (kwargs.messenger.whatsapp) {
+                    case kwargs.messenger.whatsapp == true:
+                        x = 1;
+                        document.getElementById("widget_success").style.display = "block";
+                        break;
+                }
+
 
                 if (x == 1) {
                     //  ОТПРАВКА ЗАПРОСА
@@ -337,16 +464,15 @@ class QueryData extends LibFunction {
         }
 
     }
-
 }
 
 
 QueryData.add_messenger();
+QueryData.add_plugins();
 
 success.onclick = function() {
     QueryData.add_bot_name();
     QueryData.add_access_key();
-    // QueryData.add_plugins();
     QueryData.setQuery();
     // console.log(kwargs)
 }
