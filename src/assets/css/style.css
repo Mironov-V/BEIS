@@ -1,0 +1,249 @@
+/*
+Применить градиентный текст: 
+
+{
+    background: -webkit-linear-gradient(#eee, #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+*/
+
+
+/* Для лготипа */
+
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+.logo {
+    font-family: 'Bungee', cursive;
+}
+
+
+/* Для ссылок - пунктов навигации */
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+ul li,
+a,
+span,
+strong,
+b,
+button {
+    font-family: 'Rubik', sans-serif;
+}
+
+
+/* Для текста */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+p,
+label {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+}
+
+
+/*  */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #e2e2e2;
+}
+
+a {
+    font-size: 1.1em;
+    color: #1c3457;
+    text-decoration: none;
+}
+
+a:hover {
+    transition: .7s;
+    color: #0c4598
+}
+
+button:hover {
+    transition: .7s;
+    background-color: #0c4598;
+}
+
+
+/* Секция шапки */
+
+header,
+footer {
+    box-shadow: 0px 0px 14px 0px #b8cae4;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    height: 4em;
+}
+
+main {
+    height: 100vh;
+}
+
+footer {
+    border-radius: 3em 3em 0em 0em;
+}
+
+.container__menu {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+}
+
+.container__menu-item {
+    list-style: none;
+    font-weight: bold;
+    padding: 0.3em;
+}
+
+@media (max-width: 650px) {}
+
+@media (min-width: 480px) {
+    .btn_menu {
+        display: none;
+    }
+}
+
+@media(max-width: 480px) {
+    .container_bg-blue,
+    footer {
+        background-color: #fff!important;
+    }
+    header,
+    header .container {
+        border-radius: 0em 0em 3em 3em;
+    }
+    header {
+        height: 5em;
+    }
+    .container__menu,
+    header .container_bg-blue .btn {
+        display: none;
+    }
+    .btn_menu {
+        font-size: 1.3em;
+        font-weight: 800;
+        width: 13%!important;
+        height: 80%;
+        border-radius: 0.5em;
+        border: none;
+        background-color: #1c3457;
+        color: #fff;
+    }
+    .footer nav {
+        display: none;
+    }
+}
+
+
+/* Общие классы - контейнер */
+
+.container {
+    display: flex;
+    width: 100%;
+    padding: 0.5em;
+    color: #1c3457;
+    align-items: center;
+}
+
+.container_bg-blue {
+    background-color: #e2e2e2;
+}
+
+.container_w100 {
+    width: 100%;
+}
+
+.container_w8 {
+    width: 8%;
+}
+
+.container_sb {
+    justify-content: space-between;
+}
+
+.container_sa {
+    justify-content: space-around;
+}
+
+.container_ai {
+    align-items: center;
+}
+
+
+/* Стилизация подвала */
+
+.footer {
+    display: flex;
+    width: 100%;
+    background: #e2e2e2;
+    color: #1c3457;
+    justify-content: center;
+    height: 6em;
+    align-items: center;
+}
+
+.footer__link {
+    color: #1c3457;
+}
+
+.footer__container {
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+    align-items: center;
+}
+
+.footer nav {
+    width: 85%;
+}
+
+.footer ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer ul li {
+    list-style: none;
+}
+
+
+/* Общие классы - кнопки */
+
+.btn {
+    border: none;
+    border-radius: 2em;
+    padding: 0.9em 0em;
+    font-weight: 600;
+    font-size: 1em;
+    cursor: pointer;
+    /*  */
+    text-decoration: none;
+    display: inline-block;
+    margin: 10px 20px;
+    background-image: linear-gradient(45deg, #6ab1d7 0%, #857de4 50%, #1c3457 100%);
+    background-position: 100% 0;
+    background-size: 200% 200%;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    box-shadow: 0 6px 12px 0 rgb(0 40 120 / 35%);
+    transition: .5s;
+}
+
+.btn:hover {
+    /* box-shadow: 0 0 0 0 rgba(0, 40, 120, 0);
+    background-position: 0 0; */
+    box-shadow: 0em 0em 1em 1em rgb(99 55 83 / 0%);
+    background-position: 0 0;
+    /* box-shadow: 0 0 0 0 rgb(30 50 117);
+    background-position: 0 0; */
+}
