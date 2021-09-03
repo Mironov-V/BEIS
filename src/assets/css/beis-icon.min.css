@@ -1,0 +1,42 @@
+.icon-image {
+    display: flex;
+    align-items: center;
+    /*justify-content: space-between; */
+    margin-bottom: 1em;
+}
+
+.icon-image img {
+    max-width: 4.3%;
+}
+
+.icon-image p {
+    position: relative;
+    left: 3%;
+}
+
+.icon-prew {
+    padding: 1em;
+    background: #f6f6f6;
+    border-radius: 50em;
+    box-shadow: 0 0 10px rgb(0 0 0 / 50%);
+}
+
+@media(min-width: 1200px) {}
+
+@media(min-width: 992px) and (max-width: 1199px) {}
+
+@media(min-width: 768px) and (max-width: 991px) {}
+
+@media(max-width: 767px) {
+    .icon-image img {
+        max-width: 6%;
+    }
+}
+
+@media (max-width: 650px) {}
+
+@media(max-width: 480px) {
+    .icon-image img {
+        max-width: 10%;
+    }
+}

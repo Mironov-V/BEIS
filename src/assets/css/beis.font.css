@@ -1,0 +1,46 @@
+/* Обычный текст */
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+p,
+span,
+b,
+strong {
+    font-family: 'Rubik', sans-serif;
+}
+
+
+/* Заголовки */
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+h1,
+h2,
+h3 {
+    font-family: 'Oswald', sans-serif;
+}
+
+
+/* Ссылки/пункты навигации */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+li,
+a {
+    font-family: 'Inter', sans-serif;
+}
+
+main {
+    line-height: 1.3em;
+    letter-spacing: 0.5px;
+    font-size: 1.1em;
+}
+
+@media(min-width: 1200px) {}
+
+@media(min-width: 992px) and (max-width: 1199px) {}
+
+@media(min-width: 768px) and (max-width: 991px) {}
+
+@media(max-width: 767px) {}
+
+@media (max-width: 650px) {}
+
+@media(max-width: 480px) {}
