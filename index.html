@@ -18,19 +18,10 @@
         <div class="m-menu__items">
             <!-- Закрытие -->
             <div class="m-menu__items-close">
-                <i v-on:click="close_menu" id="mobile_menu_close" class="fas fa-times"></i>
+                <!-- <i id="close_menu" class="fas fa-times"></i> -->
+                <img id="close_menu" src="src\assets\media\image\icons\close.svg" alt="">
             </div>
-            <ul>
-                <a href="#">
-                    <li>Главная</li>
-                </a>
-                <a href="#">
-                    <li>О сервисе</li>
-                </a>
-                <a href="#">
-                    <li>Правила</li>
-                </a>
-            </ul>
+
         </div>
     </section>
 
@@ -59,8 +50,9 @@
                 <button class="beis_btn btn_30">Войти</button>
             </div>
             <div class="header__mobile">
-                <button type="button" v-on:click="click_menu" class="header__mobile-menu">
-            <i class="fas fa-bars"></i>
+                <button type="button" id="click_menu" class="header__mobile-menu">
+            <!-- <i class="fas fa-bars"></i> -->
+            <img src="src\assets\media\image\icons\menu.svg" alt="">
           </button>
             </div>
         </div>
@@ -102,7 +94,7 @@
                         <div class="card__body-carousel carousel">
                             <div class="carousel__body">
                                 <!-- Element 1 -->
-                                <div id="carousel_element_1" class="carousel__body-item">
+                                <div id="x" class="carousel__body-item">
                                     <div class="carousel__body-image">
                                         <img class="wd-60" src="src\assets\media\image\start.svg" alt="BEIS START">
                                     </div>
@@ -115,7 +107,7 @@
                                     </div>
                                 </div>
                                 <!-- Element 2 -->
-                                <div id="carousel_element_2" class="carousel__body-item">
+                                <div id="carousel_element" class="carousel__body-item">
                                     <div class="carousel__body-image">
                                         <img class="wd-60" src="src\assets\media\image\statistic.svg" alt="BEIS STATISTIC">
                                     </div>
@@ -128,7 +120,7 @@
                                     </div>
                                 </div>
                                 <!-- Element 3 -->
-                                <div id="carousel_element_3" class="carousel__body-item">
+                                <div id="carousel_element" class="carousel__body-item">
                                     <div class="carousel__body-image">
                                         <img class="wd-60" src="src\assets\media\image\marketing.svg" alt="BEIS MARKETING">
                                     </div>
@@ -141,7 +133,7 @@
                                     </div>
                                 </div>
                                 <!-- Element 4 -->
-                                <div id="carousel_element_4" class="carousel__body-item">
+                                <div id="carousel_element" class="carousel__body-item">
                                     <div class="carousel__body-image">
                                         <img class="wd-60" src="src\assets\media\image\constructor.svg" alt="BEIS CONSTRUCTOR">
                                     </div>
@@ -157,10 +149,10 @@
                         </div>
                         <div class="card__body-nav">
                             <ul>
-                                <li class="element_navigation element_navigation-active"></li>
-                                <li class="element_navigation"></li>
-                                <li class="element_navigation"></li>
-                                <li class="element_navigation"></li>
+                                <li id="ebat" class="element_navigation element_navigation-active"></li>
+                                <li id="ebat" class="element_navigation"></li>
+                                <li id="ebat" class="element_navigation"></li>
+                                <li id="ebat" class="element_navigation"></li>
                             </ul>
                         </div>
                     </div>
@@ -229,8 +221,12 @@
         </div>
     </footer>
 
+
     <!-- Fontawesome -->
     <script src="https://kit.fontawesome.com/8b9970d558.js" crossorigin="anonymous"></script>
+    <!-- Carousel -->
+    <script src="src/assets/js/index.js"></script>
+
 </body>
 
 </html>

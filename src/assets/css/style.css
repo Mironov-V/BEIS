@@ -62,4 +62,11 @@ footer {
 
 @media (max-width: 650px) {}
 
-@media(max-width: 480px) {}
+@media(max-width: 480px) {
+    header {
+        top: -0.1%;
+    }
+    main {
+        font-size: 1em!important;
+    }
+}
