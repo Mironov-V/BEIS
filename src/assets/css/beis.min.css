@@ -1,3 +1,10 @@
+/* margin group */
+
+.mt-3 {
+    margin-top: 3em;
+}
+
+
 /* Header */
 
 .header__content {
@@ -67,6 +74,7 @@
     background-size: 200% auto;
     box-shadow: 0 0 20px #eee;
     display: block;
+    color: #fff;
 }
 
 .btn_30 {
@@ -234,6 +242,51 @@
     height: 100%;
 }
 
+.block__row {
+    padding: 3em;
+    height: 100%;
+}
+
+.block__row-title,
+.block__row-text {
+    text-align: center;
+    line-height: 1.5em;
+}
+
+
+/* .block__row-text {} */
+
+.block__row-form form {
+    width: 55%;
+    margin: 0 auto;
+    background: #e2e2e2;
+    display: block;
+    padding: 3em;
+    border-radius: 1em;
+}
+
+.block__row-form form label {
+    font-weight: bold;
+    line-height: 2em;
+}
+
+.block__row-form form input[type="text"],
+.block__row-form form input[type="email"],
+.block__row-form form input[type="password"] {
+    display: block;
+    margin-bottom: 1em;
+    width: 100%;
+    padding: 0.3em;
+    font-size: 1.2rem;
+    border-radius: 1em;
+    border: none;
+}
+
+.block__row-form form input[type="submit"] {
+    width: 28%;
+    float: right;
+}
+
 .block__content {
     display: flex;
     justify-content: space-between;
@@ -259,6 +312,9 @@
 @media (max-width: 650px) {
     .block__content {
         padding: 1.2em;
+    }
+    .block__row-form form {
+        width: 75%;
     }
 }
 
@@ -398,6 +454,24 @@
     .card__body {
         width: min-content;
     }
+}
+
+.block__content-num {
+    width: 100%;
+    border: dashed;
+    height: 10em;
+    padding: 2em;
+    border-radius: 2em;
+}
+
+.block__content-num h1 {
+    border: solid red 0.15em;
+    border-radius: 5em;
+    width: 2em;
+    height: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 

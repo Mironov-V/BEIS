@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="src/assets/css/beis-icon.min.css" type="text/css">
+    <link rel="stylesheet" href="src/assets/css/color.css" type="text/css">
+    <link rel="stylesheet" href="src/assets/css/style.css" type="text/css">
+    <link rel="stylesheet" href="src/assets/css/beis.min.css" type="text/css">
+    <link rel="stylesheet" href="src/assets/css/beis.font.css" type="text/css">
+</head>
+
+<body id="app">
+    <section id="mobile_menu" class="m-menu">
+        <div class="m-menu__items">
+            <!-- Закрытие -->
+            <div class="m-menu__items-close">
+                <!-- <i id="close_menu" class="fas fa-times"></i> -->
+                <img id="close_menu" src="src\assets\media\image\icons\close.svg" alt="">
+            </div>
+
+        </div>
+    </section>
+
+    <header class="header">
+        <div class="header__content">
+            <div class="header__logotype">
+                <img class="header__logotype-img" src="src/assets/media/image/BEIS_logo.png" alt="BEIS-Logotype">
+                <span class="header__logotype-text">
+            Создайте бота без <br> навыков программирования <b> |</b>
+          </span>
+            </div>
+            <div class="header__menu">
+                <ul class="header__menu-content">
+                    <a class="header__link" href="index.html">
+                        <li>Главная</li>
+                    </a>
+                    <a class="header__link" href="#">
+                        <li>О сервисе</li>
+                    </a>
+                    <a class="header__link" href="#">
+                        <li>Правила</li>
+                    </a>
+                </ul>
+            </div>
+            <div class="header__login">
+                <a href="login.html" class="beis_btn btn_30">Войти</a>
+            </div>
+            <div class="header__mobile">
+                <button type="button" id="click_menu" class="header__mobile-menu">
+            <!-- <i class="fas fa-bars"></i> -->
+            <img src="src\assets\media\image\icons\menu.svg" alt="">
+          </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="block">
+            <div class="block__row">
+                <h2 class="block__row-title">Регистрация</h2>
+                <p class="block__row-text">Зарегистрированны? / <a href="login.html">вход</a></p>
+                <div class="mt-3"></div>
+                <div class="block__row-form">
+                    <form method="POST">
+
+                        <label>Введите имя</label>
+                        <input type="text">
+
+                        <label>Введите фамилию</label>
+                        <input type="text">
+
+                        <label>Введите логин</label>
+                        <input type="text">
+
+                        <label>Введите E-mail</label>
+                        <input type="email">
+
+                        <label>Введите пароль</label>
+                        <input type="password">
+
+                        <label>Введите пароль ещё раз</label>
+                        <input type="password">
+
+                        <input type="submit" class="beis_btn" value="Войти">
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer__content">
+            <div class="block_content">
+                <div class="footer__logotype">
+                    <div class="footer__logotype-center">
+                        <img src="src/assets/media/image/BEIS_logo.png" alt="BEIS-Logotype">
+                    </div>
+                </div>
+            </div>
+            <!--  -->
+            <div class="block_content">
+                <div class="footer__menu">
+                    <p class="footer__text">
+                        Многофункциональный конструктор ваших чат-ботов
+                    </p>
+
+                    <ul class="footer__menu-content">
+                        <h3>Партнёрская программа:</h3>
+                        <a class="header__link" href="#">
+                            <li>Правила партнёрской програмы</li>
+                        </a>
+                        <a class="header__link" href="#">
+                            <li>Стать партнёром</li>
+                        </a>
+                    </ul>
+
+                    <ul class="footer__menu-content">
+                        <h3>Разработчикам:</h3>
+                        <a class="header__link" href="#">
+                            <li>API</li>
+                        </a>
+                    </ul>
+
+                    <ul class="footer__menu-content">
+                        <h3>Продукты:</h3>
+                        <a class="header__link" href="#">
+                            <li>Чат боты</li>
+                        </a>
+                        <a class="header__link" href="#">
+                            <li>Интеграции</li>
+                        </a>
+                        <a class="header__link" href="#">
+                            <li>Кейсы</li>
+                        </a>
+                    </ul>
+
+                    <ul class="footer__menu-content">
+                        <h3>Сотрудничество:</h3>
+                        <a class="header__link" href="#">
+                            <li>Карьера</li>
+                        </a>
+                        <a class="header__link" href="#">
+                            <li>Вакансии</li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/8b9970d558.js" crossorigin="anonymous"></script>
+    <!-- Carousel -->
+    <script src="src/assets/js/index.js"></script>
+
+</body>
+
+</html>
