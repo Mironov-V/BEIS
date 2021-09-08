@@ -5,235 +5,81 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="src/assets/css/beis-icon.min.css" type="text/css">
-    <link rel="stylesheet" href="src/assets/css/color.css" type="text/css">
-    <link rel="stylesheet" href="src/assets/css/style.css" type="text/css">
-    <link rel="stylesheet" href="src/assets/css/beis.min.css" type="text/css">
-    <link rel="stylesheet" href="src/assets/css/beis.font.css" type="text/css">
+    <title>BEIS | Вход</title>
+    <!-- Bootstrap CDN styles -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/beis.min.css" type="text/css">
 </head>
 
-<body id="app">
-    <section id="mobile_menu" class="m-menu">
-        <div class="m-menu__items">
-            <!-- Закрытие -->
-            <div class="m-menu__items-close">
-                <!-- <i id="close_menu" class="fas fa-times"></i> -->
-                <img id="close_menu" src="src\assets\media\image\icons\close.svg" alt="">
-            </div>
-
-        </div>
-    </section>
-
+<body>
+    <!--  -->
     <header class="header">
-        <div class="header__content">
-            <div class="header__logotype">
-                <img class="header__logotype-img" src="src/assets/media/image/BEIS_logo.png" alt="BEIS-Logotype">
-                <span class="header__logotype-text">
-            Создайте бота без <br> навыков программирования <b> |</b>
-          </span>
-            </div>
-            <div class="header__menu">
-                <ul class="header__menu-content">
-                    <a class="header__link" href="index.html">
-                        <li>Главная</li>
-                    </a>
-                    <a class="header__link" href="#">
-                        <li>О сервисе</li>
-                    </a>
-                    <a class="header__link" href="#">
-                        <li>Правила</li>
-                    </a>
-                </ul>
-            </div>
-            <div class="header__login">
-                <a href="login.html" class="beis_btn btn_30">Войти</a>
-            </div>
-            <div class="header__mobile">
-                <button type="button" id="click_menu" class="header__mobile-menu">
-            <!-- <i class="fas fa-bars"></i> -->
-            <img src="src\assets\media\image\icons\menu.svg" alt="">
-          </button>
-            </div>
-        </div>
-    </header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <div class="container col-12">
 
-    <main class="main">
-        <div class="block">
-            <div class="block__content">
-                <div class="block__content-row wd-53">
-                    <h1>Создай и запусти бота за пару минут</h1><br>
-                    <div class="icon-image">
-                        <img src="src/assets/media/image/icons/success.png" alt="Success icon">
-                        <p><b>BEIS</b> предоставляет удобный конструктор и широкий ассортимент плагинов.</p>
-                    </div>
-                    <div class="icon-image">
-                        <img src="src/assets/media/image/icons/success.png" alt="Success icon">
-                        <p>Обширная база знаний и отзывчивая тех. поддержка</p>
-                    </div>
-                    <div class="icon-image">
-                        <img src="src/assets/media/image/icons/success.png" alt="Success icon">
-                        <p>Возможность продавать свои сборки и зарабатывать на продаже эффективных чат-ботов</p>
-                    </div>
-                </div>
-                <div class="block__content-row wd-46 wn-25 wtt-dn">
-                    <img class="block__content-center wd-40 icon-prew" src="src\assets\media\image\icons\open.png" alt="">
-                </div>
-            </div>
-        </div>
-        <!--  -->
-        <div class="block">
-            <div class="block__content">
-                <div class="card wd-80">
-                    <div class="card__body">
-                        <div class="card__body-title">
-                            <h2>
-                                <b>BEIS это многофункциональная CMS для ваших чат-ботов</b>
-                            </h2>
+                    <div class="row">
+                        <div class="col-lg-1">
+                            <a class="navbar-brand" href="index.html">
+                                <!-- Brand image/logotype -->
+                                <img src="assets/media/img/BEIS_logo.png" alt="BEIS" class="img-fluid">
+                            </a>
                         </div>
-                        <div class="card__body-carousel carousel">
-                            <div class="carousel__body">
-                                <!-- Element 1 -->
-                                <div id="x" class="carousel__body-item">
-                                    <div class="carousel__body-image">
-                                        <img class="wd-60" src="src\assets\media\image\start.svg" alt="BEIS START">
-                                    </div>
 
-                                    <div class="carousel__body-description">
-                                        <h2 class="line">Создавай уникальных ботов</h2>
-                                        <br>
-                                        <p class="carousel-text">Значимость этих проблем настолько очевидна, что консультация с широким активом играет важную роль в формировании новых предложений. Разнообразный и богатый опыт консультация с широким активом обеспечивает широкому
-                                            кругу. </p>
-                                    </div>
-                                </div>
-                                <!-- Element 2 -->
-                                <div id="carousel_element" class="carousel__body-item">
-                                    <div class="carousel__body-image">
-                                        <img class="wd-60" src="src\assets\media\image\statistic.svg" alt="BEIS STATISTIC">
-                                    </div>
+                        <!-- <div class="">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                    </div> -->
 
-                                    <div class="carousel__body-description">
-                                        <h2 class="line">Статистика ботов</h2>
-                                        <br>
-                                        <p class="carousel-text">Значимость этих проблем настолько очевидна, что консультация с широким активом играет важную роль в формировании новых предложений. Разнообразный и богатый опыт консультация с широким активом обеспечивает широкому
-                                            кругу. </p>
-                                    </div>
-                                </div>
-                                <!-- Element 3 -->
-                                <div id="carousel_element" class="carousel__body-item">
-                                    <div class="carousel__body-image">
-                                        <img class="wd-60" src="src\assets\media\image\marketing.svg" alt="BEIS MARKETING">
-                                    </div>
+                        <div class="col-lg-5">
+                            Создайте бота без <br> навыков программирования <b> |</b>
+                        </div>
 
-                                    <div class="carousel__body-description">
-                                        <h2 class="line">Рассылки и другие инструменты для рекламы</h2>
-                                        <br>
-                                        <p class="carousel-text">Значимость этих проблем настолько очевидна, что консультация с широким активом играет важную роль в формировании новых предложений. Разнообразный и богатый опыт консультация с широким активом обеспечивает широкому
-                                            кругу. </p>
-                                    </div>
-                                </div>
-                                <!-- Element 4 -->
-                                <div id="carousel_element" class="carousel__body-item">
-                                    <div class="carousel__body-image">
-                                        <img class="wd-60" src="src\assets\media\image\constructor.svg" alt="BEIS CONSTRUCTOR">
-                                    </div>
-
-                                    <div class="carousel__body-description">
-                                        <h2 class="line">Многофункциональный конструктор</h2>
-                                        <br>
-                                        <p class="carousel-text">Значимость этих проблем настолько очевидна, что консультация с широким активом играет важную роль в формировании новых предложений. Разнообразный и богатый опыт консультация с широким активом обеспечивает широкому
-                                            кругу. </p>
-                                    </div>
-                                </div>
+                        <div class="col-lg-6">
+                            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="#">О проекте</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Правила</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#"><b>Вход</b></a>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
-                        <div class="card__body-nav">
-                            <ul>
-                                <li id="ebat" class="element_navigation element_navigation-active"></li>
-                                <li id="ebat" class="element_navigation"></li>
-                                <li id="ebat" class="element_navigation"></li>
-                                <li id="ebat" class="element_navigation"></li>
-                            </ul>
-                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <!--  -->
-        <div class="block">
-            <div class="block__content">
-                <div class="block__content-num">
-                    <h1>1</h1>
-                </div>
-            </div>
-        </div>
-    </main>
+        </nav>
+    </header>
 
+    <!--  -->
+    <main class="app"></main>
+
+    <!--  -->
     <footer class="footer">
-        <div class="footer__content">
-            <div class="block_content">
-                <div class="footer__logotype">
-                    <div class="footer__logotype-center">
-                        <img src="src/assets/media/image/BEIS_logo.png" alt="BEIS-Logotype">
-                    </div>
-                </div>
+        <div class="container-fluid">
+            <div class="col-lg-1 mx-auto">
+                <!-- Brand image/logotype -->
+                <img src="assets/media/img/BEIS_logo.png" alt="BEIS" class="img-fluid">
             </div>
-            <!--  -->
-            <div class="block_content">
-                <div class="footer__menu">
-                    <p class="footer__text">
-                        Многофункциональный конструктор ваших чат-ботов
-                    </p>
-
-                    <ul class="footer__menu-content">
-                        <h3>Партнёрская программа:</h3>
-                        <a class="header__link" href="#">
-                            <li>Правила партнёрской програмы</li>
-                        </a>
-                        <a class="header__link" href="#">
-                            <li>Стать партнёром</li>
-                        </a>
-                    </ul>
-
-                    <ul class="footer__menu-content">
-                        <h3>Разработчикам:</h3>
-                        <a class="header__link" href="#">
-                            <li>API</li>
-                        </a>
-                    </ul>
-
-                    <ul class="footer__menu-content">
-                        <h3>Продукты:</h3>
-                        <a class="header__link" href="#">
-                            <li>Чат боты</li>
-                        </a>
-                        <a class="header__link" href="#">
-                            <li>Интеграции</li>
-                        </a>
-                        <a class="header__link" href="#">
-                            <li>Кейсы</li>
-                        </a>
-                    </ul>
-
-                    <ul class="footer__menu-content">
-                        <h3>Сотрудничество:</h3>
-                        <a class="header__link" href="#">
-                            <li>Карьера</li>
-                        </a>
-                        <a class="header__link" href="#">
-                            <li>Вакансии</li>
-                        </a>
-                    </ul>
+            <div class="container col-12">
+                <div class="row">
+                    111
                 </div>
             </div>
         </div>
     </footer>
 
-
-    <!-- Fontawesome -->
-    <script src="https://kit.fontawesome.com/8b9970d558.js" crossorigin="anonymous"></script>
-    <!-- Carousel -->
-    <script src="src/assets/js/index.js"></script>
+    <!-- Bootstrap CDN scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <!-- Link React.js -->
+    <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
 
 </body>
 

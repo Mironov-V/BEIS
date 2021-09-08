@@ -1,0 +1,26 @@
+h1,
+h2,
+h3,
+p,
+span,
+a,
+label,
+li {
+    color: #1c3457;
+}
+
+button {
+    color: #fff;
+}
+
+@media(min-width: 1200px) {}
+
+@media(min-width: 992px) and (max-width: 1199px) {}
+
+@media(min-width: 768px) and (max-width: 991px) {}
+
+@media(max-width: 767px) {}
+
+@media (max-width: 650px) {}
+
+@media(max-width: 480px) {}
