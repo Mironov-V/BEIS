@@ -1,0 +1,58 @@
+
+
+
+p, .d-text{
+    color: #1c3457;
+}
+.d-text{
+    position: relative;
+    top: 0.5em;
+}
+a, .beis_nav{
+    text-decoration: none!important;
+    font-weight: 900!important;
+    color: #428eff!important;
+}
+a:hover{
+    transition: .7s!important;
+    color: #0a459c!important;
+}
+h1,h2,h3{font-weight: 500;}
+span, b, strong{font-weight: 600;}
+li, .navbar-nav{font-weight: 900;}
+
+@media(min-width: 992px) and (max-width: 1199px) {
+    p{}
+    a{}
+    a:hover{}
+    h1,h2,h3{}
+    span, b, strong{}
+    li{}
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+    p{}
+    a{}
+    a:hover{}
+    h1,h2,h3{}
+    span, b, strong{}
+    li{}
+}
+
+@media (max-width: 650px) {
+    p{}
+    a{}
+    a:hover{}
+    h1,h2,h3{}
+    span, b, strong{}
+    li{}
+}
+
+@media(max-width: 480px) {
+    p{}
+    a{}
+    a:hover{}
+    h1,h2,h3{}
+    span, b, strong{}
+    li{}
+}

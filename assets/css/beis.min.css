@@ -11,6 +11,13 @@ body {
 header {
     position: fixed;
     width: 100%;
+    background: #fff;
+    z-index: 9999;
+}
+
+footer{
+    /* background-color: #222;
+    color: #fff; */
 }
 
 header,
@@ -26,21 +33,113 @@ footer img {
 
 main {
     min-height: 100%;
+    padding-top: 5.5em;
+}
+.bg-beis{
+    padding-top: 10em;
+    background-color: #262b52;
+}
+.bg-not{
+    padding-top: 3em;
+}
+.bg-beis p, .bg-beis h5{
+    color: #fff!important;
+}
+.bg-beis hr{
+    color: #fff;
 }
 
+.hv-100{
+    height: 100vh;
+}
+@media(min-width: 992px) and (max-width: 1199px) {
+    .hv-100{
+        height: 110vh;
+    }
+}
+@media (max-width: 650px){
+    .hv-100{
+        height: 120vh;
+    }
+}
 .navbar-brand img {
     position: absolute;
     width: 3em;
+}
+.nav-right{
+    position: absolute;
+    right: 15%;
+}
+.offcanvas{
+    z-index: 9999;
+}
+.beis_login{
+    right: -5em;
+    position: relative;
 }
 
 @media(min-width: 1200px) {}
 
 @media(min-width: 992px) and (max-width: 1199px) {}
 
-@media(min-width: 768px) and (max-width: 991px) {}
+/* @media(min-width: 769px) and (max-width: 991px) {} */
 
-@media(max-width: 767px) {}
+@media (min-width: 768px) and (max-width: 991px){
+    header{
+        height: 14%;
+    }
+    header img.beis_logo{
+        width: 70%;
+    }
+}
+
 
 @media (max-width: 650px) {}
 
-@media(max-width: 480px) {}
+@media(max-width: 480px) {
+    .offcanvas{
+        width: 70%;
+    }
+    .xs-80{
+        width: 80%!important;
+    }
+}
+
+.w-55{
+    width: 55%;
+}
+.w-15{
+    width: 15%;
+}
+/*  */
+.mt-2{
+    margin-top: 2em;
+}
+
+
+/* BEIS */
+.btn-beis{
+    background-image: linear-gradient(to right, #BE93C5 0%, #7BC6CC 51%, #BE93C5 100%);
+    margin: 10px;
+    padding-left: 1em!important;
+    padding-right: 1em!important;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 0.4em;
+    display: block;
+    color: #fff!important;
+}
+.btn-beis:hover {
+    background-position: right center; /* change the direction of the change here */
+    text-decoration: none;
+    color: #fff!important;
+      
+}
+
+.beis_center{
+    display: flex;
+    align-items: center;
+}
