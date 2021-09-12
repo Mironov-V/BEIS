@@ -1,7 +1,17 @@
+/* Шрифт для текста, заголовков */
+@import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
+
+/* Шрифт для меню и особых пунктов */
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 
 
 
-p, .d-text{
+
+h1,h2,h3, h4, h5{
+    font-weight: 600;
+}
+p, .d-text, h1,h2,h3, h4, h5{
+    font-family: 'Play', sans-serif;
     color: #1c3457;
 }
 .d-text{
@@ -9,6 +19,7 @@ p, .d-text{
     top: 0.5em;
 }
 a, .beis_nav{
+    letter-spacing: 0.8px;
     text-decoration: none!important;
     font-weight: 900!important;
     color: #428eff!important;
@@ -17,8 +28,11 @@ a:hover{
     transition: .7s!important;
     color: #0a459c!important;
 }
-h1,h2,h3{font-weight: 500;}
-span, b, strong{font-weight: 600;}
+span, b, strong, button, a, .beis_nav{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+
+}
 li, .navbar-nav{font-weight: 900;}
 
 @media(min-width: 992px) and (max-width: 1199px) {
