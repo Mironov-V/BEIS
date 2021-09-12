@@ -39,6 +39,16 @@ main {
     padding-top: 10em;
     background-color: #262b52;
 }
+.bg_warn{
+    box-shadow: 0px 0px 10px 0px rgb(202 212 58);
+    border-radius: 2em;
+}
+.bg_warn h2, .bg_warn h3, .bg_warn h4{
+    margin: 1em 0em;
+}
+.bg_warn p{
+
+}
 .bg-not{
     padding-top: 3em;
 }
@@ -47,6 +57,10 @@ main {
 }
 .bg-beis hr{
     color: #fff;
+}
+.input-group-text{
+    width: 3em;
+    cursor: pointer;
 }
 
 .hv-100{
@@ -115,9 +129,16 @@ main {
 .mt-2{
     margin-top: 2em;
 }
+.mt-5{
+    margin-top: 5em;
+}
+
 
 
 /* BEIS */
+.beis_card{
+
+}
 .btn-beis{
     background-image: linear-gradient(to right, #BE93C5 0%, #7BC6CC 51%, #BE93C5 100%);
     margin: 10px;
