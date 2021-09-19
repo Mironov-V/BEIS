@@ -35,6 +35,23 @@ main {
     min-height: 100%;
     padding-top: 5.5em;
 }
+
+/* Стили для авторезированных пользователей */
+.auth{
+    box-shadow: 0px 0px 10px 0px rgb(34 34 34);
+    color: #a7aaaf;
+    background-color: #272c52;
+}
+.auth p{
+    color: #a7aaaf;
+}
+.auth a, .auth a.btn-beis:hover{
+    color: #fbfbfb!important;
+}
+.auth a:hover{
+    color: #8aa3fb!important;
+}
+
 .bg-beis{
     padding-top: 10em;
     background-color: #262b52;
@@ -61,6 +78,25 @@ main {
 .input-group-text{
     width: 3em;
     cursor: pointer;
+}
+
+
+
+.avatar img{
+    width: 50%;
+}
+.avatar-info img{
+    width: 80%;
+}
+.avatar-img{
+    padding: 1em;
+    border-radius: 50em;
+    box-shadow: 0px 0px 10px 0px rgb(34 34 34);
+}
+.avatar-user{
+    padding: 0.1em;
+    box-shadow: 0px 0px 10px 0px rgb(39 44 82);
+    background: #989898;
 }
 
 .hv-100{
@@ -100,11 +136,19 @@ main {
     color: #fff;
     box-shadow: inset 0 -1px 0 rgb(0 0 0 / 13%);
 }
+.start{
+    position: relative;
+    top: 3em;
+}
 
 
 @media(min-width: 1200px) {}
 
-@media(min-width: 992px) and (max-width: 1199px) {}
+@media(min-width: 992px) and (max-width: 1199px) {
+    .filter_group {
+        left: 90%;
+    }
+}
 
 /* @media(min-width: 769px) and (max-width: 991px) {} */
 
@@ -115,10 +159,18 @@ main {
     header img.beis_logo{
         width: 70%;
     }
+    .filter_group {
+        left: 88%!important;
+    }
 }
 
 
-@media (max-width: 650px) {}
+@media (max-width: 650px) {
+    .filter_group {
+        left: 85%!important;
+        top: 25%!important;
+    }
+}
 
 @media(max-width: 480px) {
     .offcanvas{
@@ -126,6 +178,13 @@ main {
     }
     .xs-80{
         width: 80%!important;
+    }
+    #offcanvasMessengerList, #offcanvasSettingsBot,
+    #offcanvasPluginList, #offcanvasTemplateVariable{
+        width: 100%;
+    }
+    .filter_group {
+        left: 80%!important;
     }
 }
 
@@ -142,13 +201,21 @@ main {
 .mt-5{
     margin-top: 5em;
 }
+.mt-10{
+    margin-top: 10em;
+}
 
 
 
 /* BEIS */
 
-.beis_card{
-
+.beis_card, .min-beis_card{
+    box-shadow: 0 0 20px rgb(39 44 82);
+    border-radius: 1em;
+    padding: 1em;
+}
+.min-beis_card{
+    box-shadow: 0px 0px 6px rgb(39 44 82);
 }
 .btn-beis{
     background-image: linear-gradient(to right, #BE93C5 0%, #7BC6CC 51%, #BE93C5 100%);
@@ -174,4 +241,27 @@ main {
 .beis_center{
     display: flex;
     align-items: center;
+}
+
+.filter_group{
+    width: 4em;
+    position: fixed;
+    left: 93%;
+    top: 16%;
+    height: 80%;
+}
+.filter_group div img{
+    background-color: #fff;
+    border-radius: 5em;
+    cursor: pointer;
+    margin-top: 2em;
+}
+
+/*  */
+#construct{
+    cursor: -webkit-grabbing;
+    overflow: auto;
+    height: 85vh;
+    background: #cccccc;
+    position: absolute;
 }
