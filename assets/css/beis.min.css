@@ -194,6 +194,9 @@ main {
 .w-15{
     width: 15%;
 }
+.w-8{
+    width: 8%;
+}
 /*  */
 .mt-2{
     margin-top: 2em;
@@ -213,6 +216,10 @@ main {
     box-shadow: 0 0 20px rgb(39 44 82);
     border-radius: 1em;
     padding: 1em;
+}
+.beis_card_active{
+    background: #81b8ef;
+    box-shadow: 0 0 20px rgb(102 185 237);
 }
 .min-beis_card{
     box-shadow: 0px 0px 6px rgb(39 44 82);
@@ -264,4 +271,36 @@ main {
     height: 85vh;
     background: #cccccc;
     position: absolute;
+}
+.not-btn{
+    background: #b0b2c0;
+    cursor: not-allowed!important;
+}
+.play_create img{
+    background-color: #1c345c!important;
+    padding: 0.4em;
+    border-radius: 0.4em!important;
+}
+
+.h6{
+    height: 6em;
+}
+
+.modal-dialog{
+    margin-top: 6em;
+}
+
+.process{
+    display: none;
+    align-items: center;
+    position: absolute;
+    height: 100%;
+    background: #e9ecef;
+    top: 0%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.progress{
+    background-color: #fff;
 }
