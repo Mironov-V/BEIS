@@ -124,7 +124,9 @@ class Plugins{
     }
 
     set_plugin(){
+        // Запуск окна настроек
         var settings = settings();
+        
         document.querySelector<HTMLElement>('#add_plugins').onclick = function(){
             settings();
             return document.querySelector<HTMLElement>('#plugin_info_close').click();
