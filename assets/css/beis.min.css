@@ -24,7 +24,9 @@ header,
 footer {
     box-shadow: 0px 0px 10px 0px rgb(143 150 206);
 }
-
+.app{
+    background: #cccccc;
+}
 footer img {
     position: relative;
     width: 4em;
@@ -136,10 +138,7 @@ main {
     color: #fff;
     box-shadow: inset 0 -1px 0 rgb(0 0 0 / 13%);
 }
-.start{
-    position: relative;
-    top: 3em;
-}
+
 
 
 @media(min-width: 1200px) {}
@@ -251,9 +250,9 @@ main {
 }
 
 .filter_group{
-    width: 4em;
+    width: 5em;
     position: fixed;
-    left: 93%;
+    left: 90%;
     top: 16%;
     height: 80%;
 }
@@ -267,10 +266,9 @@ main {
 /*  */
 #construct{
     cursor: -webkit-grabbing;
-    overflow: auto;
-    height: 85vh;
     background: #cccccc;
-    position: absolute;
+    position: relative;
+    height: 100%;
 }
 .not-btn{
     background: #b0b2c0;
@@ -285,11 +283,13 @@ main {
 .h6{
     height: 6em;
 }
+.h8{
+    height: 9em;
+}
 
 .modal-dialog{
     margin-top: 6em;
 }
-
 .process{
     display: none;
     align-items: center;
@@ -303,4 +303,36 @@ main {
 }
 .progress{
     background-color: #fff;
+}
+
+.hmc{
+    height: max-content;
+}
+
+/* Construction dialog */
+#dialog_container{
+    /* margin: 5em; */
+    background-color: #fff;
+    width: 20%;
+}
+#dialog_container button{
+    width: 60%;
+}
+.com{
+    position: relative;
+    width: 100%;
+    display: -webkit-box;
+}
+.line-bottom-start, .line-bottom{
+    border-left: solid;
+    color: #272c52;
+    height: 8em;
+    margin-top: -3em;
+    width: 1%;
+}
+.line-left{
+}
+.line-horisont{
+    border-bottom: solid;
+    color: #272c52;
 }

@@ -117,10 +117,219 @@
         <div class="container-fluid">
             <div class="row">
                 
-                <div id="construct">
-                    <div class="start mx-auto col-lg-2 col-md-2 col-sm-3 col-5 bg-white min-beis_card mt-5">
-                        <h5 class="text-center">/start</h5>
+                <div id="construct" class="pb-5">
+                    <div class="row">
+                        <div id="box" class="mx-auto">
+                            <div id="dialog_container" class="mt-5 mb-5 mx-auto start dialog_success  hmc min-beis_card">
+                                <label>Команда:</label>
+                                <input type="text" class="form-control" disabled placeholder="/start">
+                                <form>
+                                    <div class="mb-3">
+                                        <label>Ответ:</label>
+                                        <input type="text" class="form-control">
+                                        <div class="col-12 mt-3 mx-auto">
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <button type="button" class="btn btn-beis  mx-auto"  data-bs-toggle="modal" data-bs-target="#settingsKeyboard">
+                                                        <img src="assets/media/img/icons/keyboard.svg" alt="keyboard" class="img-fluid">
+                                                    </button>
+                                                </div>
+                                                <div class="col-6">
+                                                    <button type="button" class="btn btn-beis mx-auto" data-bs-toggle="modal" data-bs-target="#settingsDialog">
+                                                        <img src="assets/media/img/icons/diagram.svg" alt="branch" class="img-fluid">
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <!--  -->
+                            <!-- Создание схемы диалогов -->
+                            <!--  -->
+                            
+                            <!-- <div class="col-12">
+                                <div class="line-bottom-start mx-auto"></div>
+                                <div id="dialog_container" class="mb-5 mx-auto start dialog_success  hmc min-beis_card">
+                                    <label>Команда:</label>
+                                    <input type="text" class="form-control">
+                                    <form>
+                                        <div class="mb-3">
+                                            <label>Ответ:</label>
+                                            <input type="text" class="form-control">
+                                            <div class="col-12 mt-3 mx-auto">
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <button type="button" class="btn btn-beis  mx-auto"  data-bs-toggle="modal" data-bs-target="#settingsKeyboard">
+                                                            <img src="assets/media/img/icons/keyboard.svg" alt="keyboard" class="img-fluid">
+                                                        </button>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <button type="button" class="btn btn-beis mx-auto" data-bs-toggle="modal" data-bs-target="#settingsDialog">
+                                                            <img src="assets/media/img/icons/diagram.svg" alt="branch" class="img-fluid">
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="line-bottom-start mx-auto"></div>
+                                <div class="line-horisont"></div>
+                            </div> -->
+
+                            <!--  -->
+                            <!-- Завершение схемы создания диалогов -->
+                            <!--  -->
+
+                            <!-- Keyboard settings -->
+                            <div class="modal fade" id="settingsKeyboard" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                    <h5 class="modal-title" id="staticBackdropLabel">Настройки клавиатуры</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                    <form>
+                                        <div class="container">
+                                            <h4>Выберите тип клавиатуры:</h4>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                                <label class="form-check-label" for="flexRadioDefault1">
+                                                Кнопки в сообщениях
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                                                <label class="form-check-label" for="flexRadioDefault2">
+                                                Кнопки под полем ввода
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="container">
+                                                <button type="button" class="mx-auto col-6 btn btn-beis">Создать кнопку</button>
+                                            </div>
+                                            <form>
+                                                <div class="mb-3">
+                                                    <label for="textKeyboard" class="form-label">Надпись на кнопке</label>
+                                                    <input type="text" class="form-control" id="textKeyboard">
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                    <button type="button" class="btn btn-beis" data-bs-dismiss="modal">Применить</button>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- END -->
+
+                    <!-- Settings dialog -->
+                    <div class="modal fade" id="settingsDialog" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <h5 class="modal-title" id="staticBackdropLabel">Настройка диалога</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="container">
+                                    <form>
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <input type="radio" class="btn btn-check" name="options1" id="option1" autocomplete="off" checked>
+                                                <label class="btn btn-beis" for="option1">Диалоги</label>
+                                            </div>
+                                            <div class="col-6">
+                                                <input type="radio" class="btn btn-check" name="options2" id="option2" autocomplete="off">
+                                                <label class="btn btn-beis" for="option2">Плагины</label>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12">
+                                            <div class="plugins">
+                                                <div class="col-12">
+                                                    <div class="row">
+                                                        <!-- TOP -->
+                                                    <div class="col-6">
+                                                        <div id="plugin-0" class="mx-auto min-beis_card mt-3 h8">
+                                                            <div class="row">
+                                                                <div class="col-6">
+                                                                    <img src="https://nsk.findquiz.ru//quiz_img/161/main.jpg" alt="Квиз" class="img-fluid">
+                                                                </div>
+                                                                <div class="col-6">
+                                                                    <span title="quiz">Квиз</span>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <button type="button" class=" btn-beis btn-md col-12 btn">Выбрать</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- BOTTOM -->
+                                                    <!-- TOP -->
+                                                     <div class="col-6">
+                                                        <div id="plugin-1" class="mx-auto min-beis_card mt-3 h8">
+                                                            <div class="row">
+                                                                <div class="col-6">
+                                                                    <img src="https://4.bp.blogspot.com/-lCrxVZJV8gM/W7Hl6Qb1HEI/AAAAAAAAANE/pOqBK8-aZyoPgZ2wCnM5d-ksxYPcvSttQCLcBGAs/s1600/multi-layer-effect-on-mouse-hover.jpg" alt="Каталог" class="img-fluid">
+                                                                </div>
+                                                                <div class="col-6">
+                                                                    <span title="katalog">Каталог</span>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <button type="button" class=" btn-beis btn-md col-12 btn">Выбрать</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                     </div>
+                                                    <!-- BOTTOM -->
+                                                    <!-- TOP -->
+                                                    <div class="col-6">
+                                                        <div id="plugin-2" class="mx-auto min-beis_card mt-3 h8">
+                                                            <div class="row">
+                                                                <div class="col-6">
+                                                                    <img src="https://png.pngtree.com/png-vector/20190115/ourlarge/pngtree-vector-shopping-cart-icon-png-image_321037.jpg" alt="Корзина" class="img-fluid">
+                                                                </div>
+                                                                <div class="col-6">
+                                                                    <span title="backet">Корзина</span>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <button type="button" class=" btn-beis btn-md col-12 btn">Выбрать</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- BOTTOM -->
+                                                    </div>
+                                                    
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+
+                                        
+                                    </form>
+
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-beis" data-bs-dismiss="modal">Далее</button>
+                            </div>
+                        </div>
+                        </div>
                     </div>
+                </div>
+            </div><!-- END -->
+                    
+                    </div>
+                </div>
 
                     <!--  -->
                     <div class="filter_group">
