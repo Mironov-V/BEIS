@@ -9,7 +9,7 @@
 // Массив для записи информации из конструктора
 var arr = {};
 arr['plugins']={};
-// arr['plugins'] = [];
+arr['dialog']=[];
 class AllMessenger{
     
     set_messenger(){
@@ -125,10 +125,10 @@ class Plugins{
 
     set_plugin(){
         // Запуск окна настроек
-        var settings = settings();
+        // var settings = settings();
         
         document.querySelector<HTMLElement>('#add_plugins').onclick = function(){
-            settings();
+            // settings();
             return document.querySelector<HTMLElement>('#plugin_info_close').click();
         }
     }
@@ -150,9 +150,112 @@ class Template{}
 Классы отвечающие за построение 
 схемы обращения\взаимодействия с ботом
 */
-class Cards{}
 
-class CardInfo{}
+class Button{
+    create(){
+        var btn = document.querySelector<HTMLButtonElement>('#create_button');
+        var add = document.querySelector<HTMLButtonElement>('#add_button');
+        
+        btn.onclick = function(){
+            var find = '<div class="mb-3"> \
+                            <label for="textKeyboard" class="form-label">Надпись на кнопке</label> \
+                            <input type="text" class="form-control" id="textKeyboard" value> \
+                        </div>'
+            document.querySelector<HTMLElement>('#add_find_to_button').innerHTML += find;
+        }
+
+        add.onclick = function(){
+            console.log(0);
+            var btn_lists = document.querySelectorAll<HTMLInputElement>('#textKeyboard');
+            if (btn_lists.length > 0){
+                arr['dialog'] = {'buttons': {}}
+
+                var i = btn_lists.length - btn_lists.length;
+                var btn = [];
+
+                for (var i:number=0; btn_lists.length >= i; i++){
+                    try{
+                        btn.push(btn_lists[i].value);
+                    } catch(TypeError){}
+                }
+
+                if (document.querySelector<HTMLInputElement>('#btn_inline').checked){
+                    console.log(3.0);
+                    arr['dialog']['buttons'] = {'inline_buttons': btn}
+                }
+
+                if (document.querySelector<HTMLInputElement>('#btn_text').checked){
+                    console.log(3.1);
+                    arr['dialog']['buttons'] = {'text_buttons': btn}
+                }
+            }
+
+        }
+
+    }
+
+    delete(){
+
+    }
+}
+class CardInfo extends Button{
+
+    button(){
+        this.create();
+        this.delete();
+    }
+
+    dialog_type(){
+        // dialog_btn_active
+        document.getElementById('option1').onclick = function(){
+            var val = document.querySelector<HTMLDivElement>('#plugin_variable');
+            val.style.display = "none";
+            document.querySelector<HTMLElement>('.as2').classList.remove('dialog_btn_active');
+            document.querySelector<HTMLElement>('.as1').classList.add('dialog_btn_active');
+            return document.querySelector<HTMLDivElement>('#dialog_variable').style.display = "block";
+        }
+
+        document.getElementById('option2').onclick = function(){
+            var val = document.querySelector<HTMLDivElement>('#dialog_variable');
+            val.style.display = "none";
+            document.querySelector<HTMLElement>('.as1').classList.remove('dialog_btn_active');
+            document.querySelector<HTMLElement>('.as2').classList.add('dialog_btn_active');
+            return document.querySelector<HTMLDivElement>('#plugin_variable').style.display = "block";
+        }
+    }
+
+    attachment(){
+        var data_file = document.getElementById('data-file_dialog');
+
+        data_file.onclick = function(){
+            arr['dialog'] = {'attachment': {}}
+            var img = document.querySelector<HTMLInputElement>('#file_img-dialog').value;
+            var doc = document.querySelector<HTMLInputElement>('#file_doc-dialog').value;
+            var move = document.querySelector<HTMLInputElement>('#file_move-dialog').value;
+
+            if(img.length > 0){
+                arr['dialog']['attachment']['img'] = img;
+            }
+
+            if(doc.length > 0){
+                arr['dialog']['attachment']['doc'] = doc;
+            }
+
+            if(move.length > 0){
+                arr['dialog']['attachment']['move'] = move;
+            }
+            return console.log(arr['dialog'])
+        }
+    }
+    
+
+    main(){
+        this.dialog_type();
+        this.attachment();
+        this.button();
+    }
+}
+
 
 class CreateBot{
     settings_validate(){}
@@ -168,8 +271,11 @@ class CreateBot{
     }
 }
 
+
+
 new AllMessenger().main();
 new BotInfo().main();
 new Plugins().main();
-// ...
+
+new CardInfo().main();
 new CreateBot().run();

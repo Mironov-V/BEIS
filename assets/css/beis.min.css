@@ -250,7 +250,7 @@ main {
 }
 
 .filter_group{
-    width: 5em;
+    width: 3.5em;
     position: fixed;
     left: 90%;
     top: 16%;
@@ -265,10 +265,19 @@ main {
 
 /*  */
 #construct{
-    cursor: -webkit-grabbing;
+    /* cursor: -webkit-grabbing; */
     background: #cccccc;
     position: relative;
     height: 100%;
+}
+#plugin_variable{
+    display: none;
+}
+#dialog_variable{
+    display: block;
+}
+.dialog_btn_active{
+    color: #272c52!important;
 }
 .not-btn{
     background: #b0b2c0;
