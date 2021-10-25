@@ -230,6 +230,71 @@
                         </div>
                     </div><!-- END -->
 
+
+                    <!-- Настройка плагинов -->
+                    <div style="display: none;" id="plugin_settings" class="card mx-auto col-lg-8  min-beis_card">
+                        <div class="header_card p1">
+                            <div class="row">
+                                <div class="col-5">
+                                    <button class="btn btn-beis">Назад</button>
+                                </div>
+                                <div class="col-7">
+                                    <h4 class="mt-3">
+                                        <b>
+                                            Настройки плагина "Квиз"
+                                        </b>
+                                    </h4>
+                                </div>
+                            </div>
+                            
+                            <hr>
+                        </div>
+                        <div class="main_card">
+                            <!--  -->
+                            <!-- SETTINGS START -->
+                            <!--  -->
+                            <div style="display: block;" class="settings_kuiz">
+                                <form>
+                                    
+                                    <div class="mb-5">
+                                        <labe class="form-label">Введите вопрос</label>
+                                        <input type="text" class="form-control">
+                                        <div id="emailHelp" class="form-text">Это сообщение будет отсылать бот</div>
+                                      </div>
+                                    <div class="mb-5">
+                                        <labe class="form-label">Добавить файл</label>
+                                        <input type="file" class="form-control">
+                                      </div>
+                                    <div class="col-12">
+                                        
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-lg-6 mx-auto">
+                                                    <button class="mx-auto col-12 btn btn-beis">Добавить условие</button>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <!-- <button class="mx-auto col-10 btn btn-beis">Добавить ветвь</button> -->
+                                                    <button class="col-12 mx-auto btn btn-beis">Продолжить квиз</button>
+                                                </div>
+                                            </div>
+                                            <!-- <button class="mx-auto col-6 btn btn-beis">Добавить условие</button> -->
+                                            <!-- <button class="col-6 mx-auto mb-2 btn btn-beis">Продолжить квиз</button> -->
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div style="display: none;" class="settings_catalog"></div>
+                            <div style="display: none;" class="settings_backet"></div>
+                            <!--  -->
+                            <!-- END  -->
+                            <!--  -->
+                        </div>
+                        <div class="footer_card">
+                            <hr>
+                            <button class="btn btn-beis">Далее</button>
+                        </div>
+                    </div><!-- END -->
+
                     <!-- Settings dialog -->
                     <div class="modal fade" id="settingsDialog" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                         <div class="modal-dialog">
@@ -277,6 +342,7 @@
                                               </form>
                                         </div>
 
+
                                         <!-- Окно плагинов -->
                                         <div id="plugin_variable" class="col-12">
                                             <div class="plugins">
@@ -293,7 +359,7 @@
                                                                     <span title="quiz">Квиз</span>
                                                                 </div>
                                                                 <div class="row">
-                                                                    <button type="button" class=" btn-beis btn-md col-12 btn">Выбрать</button>
+                                                                    <button title="kuize" type="button" id="apply" class=" btn-beis btn-md col-12 btn" data-bs-dismiss="modal" aria-label="Close">Выбрать</button>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -310,7 +376,7 @@
                                                                     <span title="katalog">Каталог</span>
                                                                 </div>
                                                                 <div class="row">
-                                                                    <button type="button" class=" btn-beis btn-md col-12 btn">Выбрать</button>
+                                                                    <button title="catalog" type="button" id="apply" class=" btn-beis btn-md col-12 btn" data-bs-dismiss="modal" aria-label="Close">Выбрать</button>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -327,7 +393,7 @@
                                                                     <span title="backet">Корзина</span>
                                                                 </div>
                                                                 <div class="row">
-                                                                    <button type="button" class=" btn-beis btn-md col-12 btn">Выбрать</button>
+                                                                    <button title="backet" type="button" id="apply" class=" btn-beis btn-md col-12 btn" data-bs-dismiss="modal" aria-label="Close">Выбрать</button>
                                                                 </div>
                                                             </div>
                                                         </div>

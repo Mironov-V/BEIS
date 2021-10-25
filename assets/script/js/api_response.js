@@ -66,7 +66,22 @@ class BotInfo {
     }
 }
 class Plugins {
-    settings() { }
+    schema_dialog(item) { }
+    apply(item) {
+        try {
+            document.querySelectorAll('#apply')[item].onclick = function (e) {
+                var title = document.querySelectorAll('#apply')[item].title;
+                // code
+                return new Plugins().schema_dialog(title);
+            };
+        }
+        catch (TypeError) { }
+    }
+    settings() {
+        for (var i = 0; i <= document.querySelectorAll('#apply').length; i++) {
+            this.apply(i);
+        }
+    }
     get_plugin(item) {
         try {
             document.querySelectorAll('.plugin_element')[item].onclick = function () {
@@ -99,7 +114,7 @@ class Plugins {
         // Запуск окна настроек
         // var settings = settings();
         document.querySelector('#add_plugins').onclick = function () {
-            // settings();
+            document.getElementById('plugin_settings').style.display = "block";
             return document.querySelector('#plugin_info_close').click();
         };
     }
@@ -110,6 +125,7 @@ class Plugins {
         }
         this.close_plugin_list();
         this.set_plugin();
+        this.settings();
     }
 }
 class Template {
@@ -130,7 +146,6 @@ class Button {
             document.querySelector('#add_find_to_button').innerHTML += find;
         };
         add.onclick = function () {
-            console.log(0);
             var btn_lists = document.querySelectorAll('#textKeyboard');
             if (btn_lists.length > 0) {
                 arr['dialog'] = { 'buttons': {} };
@@ -143,11 +158,9 @@ class Button {
                     catch (TypeError) { }
                 }
                 if (document.querySelector('#btn_inline').checked) {
-                    console.log(3.0);
                     arr['dialog']['buttons'] = { 'inline_buttons': btn };
                 }
                 if (document.querySelector('#btn_text').checked) {
-                    console.log(3.1);
                     arr['dialog']['buttons'] = { 'text_buttons': btn };
                 }
             }
@@ -194,7 +207,6 @@ class CardInfo extends Button {
             if (move.length > 0) {
                 arr['dialog']['attachment']['move'] = move;
             }
-            return console.log(arr['dialog']);
         };
     }
     main() {
@@ -203,8 +215,6 @@ class CardInfo extends Button {
         this.button();
     }
 }
-// class Cards extends CardInfo{
-// }
 class CreateBot {
     settings_validate() { }
     request(data) { }

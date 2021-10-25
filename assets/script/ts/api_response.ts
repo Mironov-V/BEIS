@@ -88,7 +88,25 @@ class BotInfo{
 
 class Plugins{
 
-    settings(){}
+    schema_dialog(item){}
+
+    apply(item){
+            try{
+                document.querySelectorAll<HTMLButtonElement>('#apply')[item].onclick = function(e){
+                    var title = document.querySelectorAll<HTMLButtonElement>('#apply')[item].title
+                    // code
+                    return new Plugins().schema_dialog(title);
+                }
+            } catch(TypeError){}
+        }
+
+    settings() {
+        for (var i: number = 0; i<= document.querySelectorAll<HTMLButtonElement>('#apply').length; i++){
+            this.apply(i);
+        }
+    }
+
+    
     
     get_plugin(item){
         
@@ -128,7 +146,7 @@ class Plugins{
         // var settings = settings();
         
         document.querySelector<HTMLElement>('#add_plugins').onclick = function(){
-            // settings();
+            document.getElementById('plugin_settings').style.display = "block";
             return document.querySelector<HTMLElement>('#plugin_info_close').click();
         }
     }
@@ -140,6 +158,7 @@ class Plugins{
         }
         this.close_plugin_list();
         this.set_plugin();
+        this.settings();
     }
 }
 
@@ -165,7 +184,6 @@ class Button{
         }
 
         add.onclick = function(){
-            console.log(0);
             var btn_lists = document.querySelectorAll<HTMLInputElement>('#textKeyboard');
             if (btn_lists.length > 0){
                 arr['dialog'] = {'buttons': {}}
@@ -180,12 +198,10 @@ class Button{
                 }
 
                 if (document.querySelector<HTMLInputElement>('#btn_inline').checked){
-                    console.log(3.0);
                     arr['dialog']['buttons'] = {'inline_buttons': btn}
                 }
 
                 if (document.querySelector<HTMLInputElement>('#btn_text').checked){
-                    console.log(3.1);
                     arr['dialog']['buttons'] = {'text_buttons': btn}
                 }
             }
@@ -244,7 +260,6 @@ class CardInfo extends Button{
             if(move.length > 0){
                 arr['dialog']['attachment']['move'] = move;
             }
-            return console.log(arr['dialog'])
         }
     }
     
@@ -255,6 +270,7 @@ class CardInfo extends Button{
         this.button();
     }
 }
+
 
 
 class CreateBot{
@@ -270,8 +286,6 @@ class CreateBot{
         }
     }
 }
-
-
 
 new AllMessenger().main();
 new BotInfo().main();

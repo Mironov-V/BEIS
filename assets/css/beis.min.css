@@ -210,7 +210,17 @@ main {
 
 
 /* BEIS */
-
+.footer_card button{
+    float: right;
+}
+.main_card{
+    position: relative;
+    top: 0;
+    bottom: 0;
+    min-height: 50%;
+    height: 25em;
+    overflow: auto;
+}
 .beis_card, .min-beis_card{
     box-shadow: 0 0 20px rgb(39 44 82);
     border-radius: 1em;
@@ -272,6 +282,15 @@ main {
 }
 #plugin_variable{
     display: none;
+}
+#plugin_settings{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    bottom: 0;
+    z-index: 9999999;
+    border-radius: 0%;
 }
 #dialog_variable{
     display: block;
